@@ -6,7 +6,7 @@
       :class="{ active: $nuxt.$route.path === link.link }"
       :to="link.link"
     >
-      {{ link.text }}
+      <span class="link-icon">{{ link.icon }}</span> {{ link.text }}
     </nuxt-link>
   </div>
 </template>
@@ -17,19 +17,28 @@ export default {
     return {
       links: [
         {
-          text: "🏡 Home",
+          icon: "🏡",
+          text: "Home",
           link: "/",
         },
         {
-          text: "💡 Projects",
+          icon: "📚",
+          text: "Blog",
+          link: "/blog",
+        },
+        {
+          icon: "💡",
+          text: "Projects",
           link: "/projects",
         },
         {
-          text: "💻 Tools",
+          icon: "💻",
+          text: "Tools",
           link: "/tools",
         },
         {
-          text: "📝 About",
+          icon: "📝",
+          text: "About",
           link: "/about",
         },
       ],
@@ -53,6 +62,10 @@ export default {
   align-items: center;
   column-gap: 12px;
 
+  @include xs-screen {
+    column-gap: 4px;
+  }
+
   & a {
     color: $light;
     text-decoration: none;
@@ -61,14 +74,32 @@ export default {
     border-radius: 6px;
     transition: background-color 0.12s ease-in-out;
 
+    @include xs-screen {
+      font-size: 14px;
+      padding: 6px 8px;
+      border-radius: 4px;
+    }
+
     &:hover {
-      background-color: $semi-dark;
+      background-color: $semi-dark-transparent;
       transition: background-color 0.3s ease-in-out;
+    }
+
+    & span.link-icon {
+      @include sm-screen {
+        display: none;
+      }
     }
   }
 
   & a.active {
     color: $accent;
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+      background-color: $accent-transparent;
+      transition: background-color 0.3s ease-in-out;
+    }
   }
 }
 </style>

@@ -18,7 +18,11 @@ export default {
   },
 
   styleResources: {
-    scss: ["@/assets/scss/variables.scss", "@/assets/scss/fonts.scss"],
+    scss: [
+      "@/assets/scss/variables.scss",
+      "@/assets/scss/fonts.scss",
+      "@/assets/scss/media-query.scss",
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
