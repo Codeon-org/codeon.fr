@@ -4,5 +4,6 @@
    },
    "editor.codeActionsOnSave": {
       "source.fixAll": true
-   }
+   },
+   "files.eol": "\n"
 }

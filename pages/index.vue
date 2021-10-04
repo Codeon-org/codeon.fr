@@ -1,7 +1,77 @@
 <template>
-  <Tutorial />
+  <div>
+    <h1>
+      Hello
+      <eva-icon name="github-outline" fill="limegreen"></eva-icon>
+    </h1>
+    <p>dskjfhjsfhkshdfsjh</p>
+    <p>dskjfhjsfhkshdfsjh</p>
+    <p>dskjfhjsfhkshdfsjh</p>
+    <p>dskjfhjsfhkshdfsjh</p>
+    <p>dskjfhjsfhkshdfsjh</p>
+    <p>dskjfhjsfhkshdfsjh</p>
+    <p>dskjfhjsfhkshdfsjh</p>
+    <p>dskjfhjsfhkshdfsjh</p>
+    <p>dskjfhjsfhkshdfsjh</p>
+    <p>dskjfhjsfhkshdfsjh</p>
+    <p>dskjfhjsfhkshdfsjh</p>
+    <p>dskjfhjsfhkshdfsjh</p>
+    <p>dskjfhjsfhkshdfsjh</p>
+    <p>dskjfhjsfhkshdfsjh</p>
+    <p>dskjfhjsfhkshdfsjh</p>
+    <p>dskjfhjsfhkshdfsjh</p>
+    <p>dskjfhjsfhkshdfsjh</p>
+    <p>dskjfhjsfhkshdfsjh</p>
+    <p>dskjfhjsfhkshdfsjh</p>
+    <p>dskjfhjsfhkshdfsjh</p>
+    <p>dskjfhjsfhkshdfsjh</p>
+    <p>dskjfhjsfhkshdfsjh</p>
+    <p>dskjfhjsfhkshdfsjh</p>
+    <p>dskjfhjsfhkshdfsjh</p>
+    <p>dskjfhjsfhkshdfsjh</p>
+    <p>dskjfhjsfhkshdfsjh</p>
+    <p>dskjfhjsfhkshdfsjh</p>
+    <p>dskjfhjsfhkshdfsjh</p>
+    <p>dskjfhjsfhkshdfsjh</p>
+    <p>dskjfhjsfhkshdfsjh</p>
+    <p>dskjfhjsfhkshdfsjh</p>
+    <p>dskjfhjsfhkshdfsjh</p>
+    <p>dskjfhjsfhkshdfsjh</p>
+    <p>dskjfhjsfhkshdfsjh</p>
+    <p>dskjfhjsfhkshdfsjh</p>
+    <p>dskjfhjsfhkshdfsjh</p>
+    <p>dskjfhjsfhkshdfsjh</p>
+    <p>dskjfhjsfhkshdfsjh</p>
+    <p>dskjfhjsfhkshdfsjh</p>
+    <p>dskjfhjsfhkshdfsjh</p>
+    <p>dskjfhjsfhkshdfsjh</p>
+    <p>dskjfhjsfhkshdfsjh</p>
+    <p>dskjfhjsfhkshdfsjh</p>
+    <p>dskjfhjsfhkshdfsjh</p>
+    <p>dskjfhjsfhkshdfsjh</p>
+    <p>dskjfhjsfhkshdfsjh</p>
+    <p>dskjfhjsfhkshdfsjh</p>
+    <p>dskjfhjsfhkshdfsjh</p>
+    <p>dskjfhjsfhkshdfsjh</p>
+    <p>dskjfhjsfhkshdfsjh</p>
+    <p>dskjfhjsfhkshdfsjh</p>
+    <p>dskjfhjsfhkshdfsjh</p>
+    <p>dskjfhjsfhkshdfsjh</p>
+    <p>dskjfhjsfhkshdfsjh</p>
+    <p>dskjfhjsfhkshdfsjh</p>
+    <p>dskjfhjsfhkshdfsjh</p>
+    <p>dskjfhjsfhkshdfsjh</p>
+    <p>dskjfhjsfhkshdfsjh</p>
+    <p>dskjfhjsfhkshdfsjh</p>
+    <p>dskjfhjsfhkshdfsjh</p>
+    <p>dskjfhjsfhkshdfsjh</p>
+  </div>
 </template>
 
 <script>
-export default {};
+export default {
+  layout: "main",
+};
 </script>
+
+<style lang="scss"></style>
