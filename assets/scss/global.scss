@@ -8,10 +8,11 @@
    text-decoration: none;
    padding: 3px 6px;
    border-radius: 4px;
+   background-color: $accent-transparent;
    transition: background-color .12s ease-in-out;
 
    &:hover {
-    background-color: $accent-transparent;
+    background-color: $accent-semi-transparent;
     transition: background-color .12s ease-in-out;
    }
 }

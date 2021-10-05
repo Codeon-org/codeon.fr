@@ -97,7 +97,7 @@ export default {
     transition: background-color 0.3s ease-in-out;
 
     &:hover {
-      background-color: $accent-transparent;
+      background-color: $accent-semi-transparent;
       transition: background-color 0.3s ease-in-out;
     }
   }

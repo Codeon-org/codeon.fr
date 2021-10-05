@@ -19,95 +19,12 @@
 </template>
 
 <script>
+import tools from "@/data/tools";
+
 export default {
   data() {
     return {
-      tools: [
-        {
-          header: "Code editors",
-          anchor: "code-editors",
-          items: [
-            {
-              name: "Visual Studio Code",
-              link: "https://code.visualstudio.com/",
-              description: "",
-            },
-            {
-              name: "PHPStorm",
-              link: "https://www.jetbrains.com/phpstorm/",
-              description: "",
-            },
-            {
-              name: "Lite XL",
-              link: "https://lite-xl.github.io/",
-              description: "",
-            },
-            {
-              name: "Github Codespace",
-              link: "https://github.com/features/codespaces",
-              description: "",
-            },
-          ],
-        },
-        {
-          header: "Fonts",
-          anchor: "fonts",
-          items: [
-            {
-              name: "Cascadia Code",
-              link: "https://github.com/microsoft/cascadia-code",
-              description: "",
-            },
-            {
-              name: "Fira Code",
-              link: "https://github.com/tonsky/FiraCode",
-              description: "",
-            },
-            {
-              name: "JetBrains Mono",
-              link: "https://www.jetbrains.com/lp/mono/",
-              description: "",
-            },
-          ],
-        },
-        {
-          header: "Inspirations",
-          anchor: "inspirations",
-          items: [
-            {
-              name: "Dribbble",
-              link: "https://dribbble.com/",
-              description: "",
-            },
-            {
-              name: "Pinterest",
-              link: "https://www.pinterest.com/",
-              description: "",
-            },
-            {
-              name: "Screenlane",
-              link: "https://screenlane.com/",
-              description: "",
-            },
-            {
-              name: "Flowrift",
-              link: "https://flowrift.com/",
-              description: "",
-            },
-          ],
-        },
-        {
-          header: "Productivity softwares",
-          anchor: "productivity-softwares",
-          items: [
-            {
-              name: "Notion",
-              link: "https://dribbble.com/",
-              description: "",
-            },
-          ],
-        },
-      ],
+      tools,
     };
   },
 };
@@ -155,10 +72,10 @@ h2 {
 }
 
 ul {
-  list-style: none; /* Remove default bullets */
+  list-style: none;
 
   & li {
-    line-height: 35px;
+    line-height: 38px;
   }
 
   & li::before {
