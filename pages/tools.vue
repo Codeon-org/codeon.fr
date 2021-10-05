@@ -123,6 +123,8 @@ h2 {
   margin-top: 34px;
   margin-bottom: 20px;
   font-size: 30px;
+
+  // TODO Bug ici avec le blur de la navbar, le text n'est pas blured
   position: relative;
 
   &.first-header {
