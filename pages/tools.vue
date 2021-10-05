@@ -2,7 +2,8 @@
   <div>
     <h1>Tools</h1>
     <p class="secondary">
-      Here is a quick list of tools and softwares I daily use as a developer.
+      Here is a quick list of tools and softwares use for my day-to-day work as
+      a web developer and an engineer student.
     </p>
 
     <div v-for="(tool, index) in tools" :key="tool.header">
@@ -82,15 +83,17 @@ ul {
 
   & li {
     line-height: 38px;
+    position: relative;
+    margin-left: 38px;
   }
 
   & li::before {
+    position: absolute;
     content: "\2022";
     color: $secondary-transparent;
     font-weight: bold;
     display: inline-block;
-    width: 1em;
-    margin-left: 20px;
+    left: -18px;
   }
 }
 

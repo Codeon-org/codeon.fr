@@ -38,11 +38,15 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     "@nuxtjs/eslint-module",
+    "@nuxtjs/pwa",
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ["@nuxtjs/style-resources"],
+  modules: ["@nuxtjs/style-resources", "@nuxtjs/pwa", "@nuxtjs/axios"],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+
+  // PWA : https://pwa.nuxtjs.org/setup
+  pwa: {},
 };
