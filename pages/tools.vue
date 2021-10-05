@@ -11,7 +11,12 @@
       </h2>
       <ul>
         <li v-for="item in tool.items" :key="item.name">
-          <a :href="item.link" class="accent">{{ item.name }}</a>
+          <a :href="item.link" target="_blank" class="accent">{{
+            item.name
+          }}</a>
+          <span v-show="item.description !== ''" class="secondary">
+            : {{ item.description }}</span
+          >
         </li>
       </ul>
     </div>

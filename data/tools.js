@@ -6,7 +6,8 @@ const tools = [
       {
         name: "Visual Studio Code",
         link: "https://code.visualstudio.com/",
-        description: "",
+        description:
+          "It's very flexible and it has very good features for javascript projects.",
       },
       {
         name: "PHPStorm",
