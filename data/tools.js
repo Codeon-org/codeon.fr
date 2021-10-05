@@ -79,42 +79,42 @@ const tools = [
     items: [
       {
         name: "Notion",
-        link: "https://notion.so/",
+        link: "https://www.notion.so/",
         description: "",
       },
       {
-        name: "Pomodroid",
-        link: "",
+        name: "Pomotroid",
+        link: "https://splode.github.io/pomotroid/",
         description: "",
       },
       {
         name: "Todoist",
-        link: "",
+        link: "https://todoist.com/",
         description: "",
       },
       {
         name: "Astral",
-        link: "",
+        link: "https://astralapp.com/",
         description: "",
       },
       {
         name: "Codespace",
-        link: "",
+        link: "https://codespace.app/",
         description: "",
       },
       {
         name: "Office 365",
-        link: "",
+        link: "https://www.office.com/",
         description: "",
       },
       {
         name: "Carbon",
-        link: "https://carbon.now.sh",
+        link: "https://carbon.now.sh/",
         description: "",
       },
       {
         name: "Google Suit",
-        link: "",
+        link: "https://workspace.google.com/",
         description: "",
       },
     ],
@@ -125,22 +125,22 @@ const tools = [
     items: [
       {
         name: "Discord",
-        link: "",
+        link: "https://discord.com/",
         description: "",
       },
       {
         name: "Mailspring",
-        link: "",
+        link: "https://getmailspring.com/",
         description: "",
       },
       {
         name: "Messenger",
-        link: "",
+        link: "https://www.messenger.com/",
         description: "",
       },
       {
         name: "Signal",
-        link: "",
+        link: "https://signal.org/",
         description: "",
       },
     ],
@@ -151,27 +151,27 @@ const tools = [
     items: [
       {
         name: "Needlify",
-        link: "",
+        link: "https://needlify.com/",
         description: "",
       },
       {
         name: "Devto",
-        link: "",
+        link: "https://dev.to/",
         description: "",
       },
       {
         name: "Medium",
-        link: "",
+        link: "https://medium.com/",
         description: "",
       },
       {
         name: "Scotch",
-        link: "",
+        link: "https://scotch.io/",
         description: "",
       },
       {
         name: "Github Blog",
-        link: "",
+        link: "https://github.blog/",
         description: "",
       },
     ],
@@ -182,17 +182,17 @@ const tools = [
     items: [
       {
         name: "Unsplash",
-        link: "",
+        link: "https://unsplash.com/",
         description: "",
       },
       {
         name: "Undraw",
-        link: "",
+        link: "https://undraw.co/",
         description: "",
       },
       {
         name: "SimpleIcons",
-        link: "",
+        link: "https://simpleicons.org/",
         description: "",
       },
     ],
@@ -203,12 +203,12 @@ const tools = [
     items: [
       {
         name: "Adobe XD",
-        link: "",
+        link: "https://www.adobe.com/products/xd.html",
         description: "",
       },
       {
         name: "Color Hunt",
-        link: "",
+        link: "https://colorhunt.co/",
         description: "",
       },
     ],
@@ -219,22 +219,22 @@ const tools = [
     items: [
       {
         name: "Windows Terminal",
-        link: "",
+        link: "https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701",
         description: "",
       },
       {
         name: "Git Bash",
-        link: "",
+        link: "https://git-scm.com/",
         description: "",
       },
       {
         name: "Ubuntu 20.04",
-        link: "",
+        link: "https://www.microsoft.com/en-ca/p/ubuntu-2004-lts/9n6svws3rx71",
         description: "",
       },
       {
         name: "Kali Linux",
-        link: "",
+        link: "https://www.microsoft.com/en-ca/p/kali-linux/9pkr34tncv07",
         description: "",
       },
     ],
@@ -245,37 +245,37 @@ const tools = [
     items: [
       {
         name: "Windows Subsystem for Linux (WSL 2)",
-        link: "",
+        link: "https://docs.microsoft.com/en-us/windows/wsl/install",
         description: "",
       },
       {
         name: "TablePlus",
-        link: "",
+        link: "https://www.tableplus.io/",
         description: "",
       },
       {
         name: "Filezilla",
-        link: "",
+        link: "https://filezilla-project.org/",
         description: "",
       },
       {
         name: "Insomnia",
-        link: "",
+        link: "https://insomnia.rest/",
         description: "",
       },
       {
         name: "Github",
-        link: "",
+        link: "https://github.com/MrAnyx",
         description: "",
       },
       {
         name: "Mailtrap",
-        link: "",
+        link: "https://mailtrap.io/",
         description: "",
       },
       {
         name: "Composer",
-        link: "",
+        link: "https://getcomposer.org/",
         description: "",
       },
     ],
@@ -286,22 +286,17 @@ const tools = [
     items: [
       {
         name: "Brave",
-        link: "",
+        link: "https://brave.com/",
         description: "",
       },
       {
         name: "Spotify",
-        link: "",
+        link: "https://www.spotify.com/",
         description: "",
       },
       {
         name: "PowerToys",
-        link: "",
-        description: "",
-      },
-      {
-        name: "OBS Studio",
-        link: "",
+        link: "https://github.com/microsoft/PowerToys",
         description: "",
       },
     ],
@@ -312,12 +307,12 @@ const tools = [
     items: [
       {
         name: "Fonts Ninja",
-        link: "",
+        link: "https://chrome.google.com/webstore/detail/fonts-ninja/eljapbgkmlngdpckoiiibecpemleclhh",
         description: "",
       },
       {
         name: "Vue DevTool",
-        link: "",
+        link: "https://chrome.google.com/webstore/detail/vuejs-devtools/ljjemllljcmogpfapbkkighbhhppjdbg",
         description: "",
       },
     ],
@@ -328,62 +323,62 @@ const tools = [
     items: [
       {
         name: "Bearded Theme Arc EolStorm",
-        link: "",
+        link: "https://chrome.google.com/webstore/detail/vuejs-devtools/ljjemllljcmogpfapbkkighbhhppjdbg",
         description: "",
       },
       {
         name: "Material Icons Theme",
-        link: "",
+        link: "https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme",
         description: "",
       },
       {
         name: "Material Product Icons",
-        link: "",
+        link: "https://marketplace.visualstudio.com/items?itemName=PKief.material-product-icons",
         description: "",
       },
       {
         name: "TODO Highlight",
-        link: "",
+        link: "https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight",
         description: "",
       },
       {
         name: "Todo Tree",
-        link: "",
+        link: "https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree",
         description: "",
       },
       {
         name: "ESLint",
-        link: "",
+        link: "https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint",
         description: "",
       },
       {
         name: "Prettier",
-        link: "",
+        link: "https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode",
         description: "",
       },
       {
         name: "GitLens",
-        link: "",
+        link: "https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens",
         description: "",
       },
       {
         name: "Polacode",
-        link: "",
+        link: "https://marketplace.visualstudio.com/items?itemName=pnp.polacode",
         description: "",
       },
       {
         name: "Remote WSL",
-        link: "",
+        link: "https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl",
         description: "",
       },
       {
         name: "Vetur",
-        link: "",
+        link: "https://marketplace.visualstudio.com/items?itemName=octref.vetur",
         description: "",
       },
       {
         name: "WikiLens",
-        link: "",
+        link: "https://marketplace.visualstudio.com/items?itemName=lostintangent.wikilens",
         description: "",
       },
     ],
@@ -394,22 +389,22 @@ const tools = [
     items: [
       {
         name: "Javascript",
-        link: "",
+        link: "https://www.javascript.com/",
         description: "",
       },
       {
         name: "Typescript",
-        link: "",
+        link: "https://www.typescriptlang.org/",
         description: "",
       },
       {
         name: "PHP",
-        link: "",
+        link: "https://www.php.net/",
         description: "",
       },
       {
         name: "Python",
-        link: "",
+        link: "https://www.python.org/",
         description: "",
       },
     ],
@@ -420,32 +415,32 @@ const tools = [
     items: [
       {
         name: "Bootstrap",
-        link: "",
+        link: "https://getbootstrap.com/",
         description: "",
       },
       {
         name: "UiKit",
-        link: "",
+        link: "https://getuikit.com/",
         description: "",
       },
       {
         name: "Symfony",
-        link: "",
+        link: "https://symfony.com/",
         description: "",
       },
       {
         name: "VueJS",
-        link: "",
+        link: "https://vuejs.org/",
         description: "",
       },
       {
         name: "ViteJS",
-        link: "",
+        link: "https://vitejs.dev/",
         description: "",
       },
       {
         name: "Electron",
-        link: "",
+        link: "https://www.electronjs.org/",
         description: "",
       },
     ],

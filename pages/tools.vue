@@ -9,14 +9,15 @@
       <h2 :id="tool.anchor" :class="{ 'first-header': index === 0 }">
         <a :href="`#${tool.anchor}`">{{ tool.header }}</a>
       </h2>
+
       <ul>
         <li v-for="item in tool.items" :key="item.name">
           <a :href="item.link" target="_blank" class="accent">{{
             item.name
           }}</a>
           <span v-show="item.description !== ''" class="secondary">
-            : {{ item.description }}</span
-          >
+            : {{ item.description }}
+          </span>
         </li>
       </ul>
     </div>
