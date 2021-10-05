@@ -1,0 +1,17 @@
+::selection {
+   background: $accent2;
+ }
+
+
+ a.accent {
+   color: $accent;
+   text-decoration: none;
+   padding: 3px 6px;
+   border-radius: 4px;
+   transition: background-color .12s ease-in-out;
+
+   &:hover {
+    background-color: $accent-transparent;
+    transition: background-color .12s ease-in-out;
+   }
+}

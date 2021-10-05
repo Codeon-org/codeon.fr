@@ -9,7 +9,7 @@
 
 <style lang="scss" scoped>
 #wrapper {
-  padding-top: 70px;
+  padding-top: 120px;
   padding-left: 35px;
   padding-right: 35px;
   width: 100%;
