@@ -6,5 +6,5 @@
       "source.fixAll": true
    },
    "files.eol": "\n",
-   "prettier.printWidth": 450
+   "prettier.printWidth": 250
 }
