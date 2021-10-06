@@ -96,8 +96,4 @@ ul {
     left: -18px;
   }
 }
-
-.secondary {
-  color: $secondary;
-}
 </style>

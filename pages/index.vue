@@ -8,7 +8,7 @@
       <b>I'm a french software developer and engineer student</b>. Well, I'm
       also a UI designer in my spare time. I'm currently working at
       <a href="https://icohup.com/" class="accent">Icohup</a>, a french startup
-      based in Limoges and I'm also an independant with my micro-company called
+      based in Limoges and I'm also an independent with my micro-company called
       <a href="" class="accent">Codeon</a>.
     </p>
   </div>
@@ -34,7 +34,7 @@ export default {
 
     &:hover {
       background-color: $semi-dark-transparent;
-      box-shadow: 0 0 25px #12161d21;
+      box-shadow: 0 0 25px #12161d7a;
       transition: background-color 0.15s ease-in-out,
         box-shadow 0.15s ease-in-out;
     }
