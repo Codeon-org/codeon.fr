@@ -312,6 +312,11 @@ const tools = [
         link: "https://chrome.google.com/webstore/detail/vuejs-devtools/ljjemllljcmogpfapbkkighbhhppjdbg",
         description: "Understand and debug vue behaviour.",
       },
+      {
+        name: "Json Formatter",
+        link: "https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa",
+        description: "Give json pages a better look.",
+      },
     ],
   },
   {

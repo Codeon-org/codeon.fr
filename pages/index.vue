@@ -34,7 +34,7 @@ export default {
 
     &:hover {
       background-color: $semi-dark-transparent;
-      box-shadow: 0 0 25px #12161d7a;
+      box-shadow: 0 0 25px #12161d46;
       transition: background-color 0.15s ease-in-out,
         box-shadow 0.15s ease-in-out;
     }

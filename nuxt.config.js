@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "codeon.fr",
+    title: "Robin from Codeon 👋",
     htmlAttrs: {
       lang: "en",
     },

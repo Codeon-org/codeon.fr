@@ -73,6 +73,15 @@ const projects = [
     wip: true,
   },
   {
+    title: "Linux-autohost",
+    url: "https://github.com/Buissartt/Linux-autohost",
+    description:
+      "Linux-autohost is a really small Bash script which automates the configuration of a new local web site on Debian distributions or WSL based on Debian distributions",
+    image: "https://i.ibb.co/QfGGx3t/linux-autohost.png",
+    tags: ["WSL", "Linux", "Debian", "Web"],
+    wip: true,
+  },
+  {
     title: "FlappyBird",
     url: "https://github.com/MrAnyx/FlappyBird",
     description: "Obviously, this is the FlappyBird game written in Processing",

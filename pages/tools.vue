@@ -47,7 +47,7 @@ h2 {
   z-index: 1;
 
   &.first-header {
-    margin-top: 64px;
+    margin-top: 50px;
   }
 
   & a {
