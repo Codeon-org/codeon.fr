@@ -6,5 +6,6 @@
       "source.fixAll": true
    },
    "files.eol": "\n",
-   "prettier.printWidth": 250
+   "prettier.printWidth": 250,
+   "editor.tabSize": 2
 }

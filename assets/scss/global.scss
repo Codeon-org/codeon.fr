@@ -3,7 +3,7 @@
  }
 
 
- a.accent {
+ *.accent {
    color: $accent;
    text-decoration: none;
    padding: 3px 6px;
@@ -19,4 +19,13 @@
 
 .secondary {
   color: $secondary;
+}
+
+.page-title {
+  font-size: 46px;
+  line-height: 95px;
+}
+
+.page-description {
+  line-height: 26px;
 }
