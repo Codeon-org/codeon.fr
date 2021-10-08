@@ -73,9 +73,28 @@
     </p>
 
     <p>
+      Finally, to keep track of what I achieve during the year, I created a
+      <a
+        href="https://codeon.notion.site/Roadmap-2021-2022-92830dd78ad5471b8b79303c74b110f8"
+        target="_blank"
+        class="accent"
+        >development roadmap</a
+      >
+      for myself. It therefore allows me to know what I want to learn or what I
+      would like to improve myself on. You can take inspiration from it, if you
+      feel like it.
+    </p>
+
+    <p>
       Besides programming, I try to write articles regularly in order to share
       my knowledge. I am also a music lover which means as soon as I do
       something <b class="accent-text">I MUST have music in my ears</b>.
+      Finally, I try as much as possible to stay organized, which is why I love
+      organizational and planning tools such as
+      <a href="https://www.notion.so/" class="accent" target="_blank">Notion</a>
+      or
+      <a href="https://todoist.com" target="_blank" class="accent">Todoist</a>.
+      This allows me to plan my weeks and days to be more productive.
     </p>
 
     <p class="last">Hope you enjoyed finding out more about me 👍</p>
