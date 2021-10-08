@@ -63,13 +63,11 @@ export default {
   },
   mounted() {
     // TODO Implementer l'appel API
-
-    this.$axios
-      .get("https://needlify.com/api/automation/MrAnyx/posts/get")
-      .then(({ data }) => {
-        console.log(data);
-      });
-
+    // this.$axios
+    //   .get("https://needlify.com/api/automation/MrAnyx/posts/get")
+    //   .then(({ data }) => {
+    //     console.log(data);
+    //   });
     // console.log(this.blogs.posts);
   },
   methods: {
