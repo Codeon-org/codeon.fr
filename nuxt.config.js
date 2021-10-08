@@ -1,8 +1,8 @@
 export default {
   target: "static",
-  router: {
-    base: "/codeon.fr/",
-  },
+  // router: {
+  //   base: "/codeon.fr/",
+  // },
 
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
@@ -18,6 +18,7 @@ export default {
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { hid: "description", name: "description", content: "" },
       { name: "format-detection", content: "telephone=no" },
+      // TODO Ajouter un og image
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
   },
