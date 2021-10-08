@@ -1,11 +1,7 @@
 export default {
   target: "static",
-  // router: {
-  //   base: "/codeon.fr/",
-  // },
-
-  generate: {
-    fallback: true,
+  router: {
+    base: "/codeon.fr/",
   },
 
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
