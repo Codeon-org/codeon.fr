@@ -63,7 +63,14 @@ export default {
   },
   mounted() {
     // TODO Implementer l'appel API
-    console.log(this.blogs.posts);
+
+    this.$axios
+      .get("https://needlify.com/api/automation/MrAnyx/posts/get")
+      .then(({ data }) => {
+        console.log(data);
+      });
+
+    // console.log(this.blogs.posts);
   },
   methods: {
     getDateFromTimestamp(timestamp) {
