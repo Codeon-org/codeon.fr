@@ -24,7 +24,9 @@
       <br />
 
       Licensed under
-      <a href="https://choosealicense.com/licenses/cc-by-sa-4.0/" class="accent"
+      <a
+        href="https://github.com/Codeon-org/codeon.fr/blob/master/LICENSE"
+        class="accent"
         >CC-BY-SA-4.0</a
       >
       © {{ year }} <a href="#" class="accent">Codeon</a>
