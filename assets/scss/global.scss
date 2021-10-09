@@ -1,24 +1,51 @@
 ::selection {
-   background: $accent2;
- }
+  background: $accent2;
+}
 
+.spinner {
+  width: 35px;
+  height: 35px;
+  vertical-align: text-bottom;
+  border: 4px solid $accent-less-transparent;
+  border-right: 4px solid transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto;
+}
 
- *.accent {
-   color: $accent;
-   text-decoration: none;
-   padding: 3px 6px;
-   border-radius: 4px;
-   background-color: $accent-transparent;
-   transition: background-color .12s ease-in-out;
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
 
-   &:hover {
+  50% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+*.accent {
+  color: $accent;
+  text-decoration: none;
+  padding: 3px 6px;
+  border-radius: 4px;
+  background-color: $accent-transparent;
+  transition: background-color 0.12s ease-in-out;
+
+  &:hover {
     background-color: $accent-semi-transparent;
-    transition: background-color .12s ease-in-out;
-   }
+  }
+
+  &:active {
+    background-color: $accent-semi-less-transparent;
+  }
 }
 
 *.accent-text {
-  color: $accent
+  color: $accent;
 }
 
 .secondary {
