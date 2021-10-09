@@ -97,6 +97,10 @@
       This allows me to plan my weeks and days to be more productive.
     </p>
 
+    <div id="experience-wrapper">
+      <h2 class="page-title-h2">Experience</h2>
+    </div>
+
     <p class="last">Hope you enjoyed finding out more about me 👍</p>
   </div>
 </template>
