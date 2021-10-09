@@ -11,7 +11,7 @@
 
     <div id="posts-wrapper" class="">
       <a
-        v-for="(post, idx) in blogs.posts"
+        v-for="(post, idx) in posts"
         :key="idx"
         class="post-container"
         :href="post.url"
@@ -37,45 +37,86 @@
             <p class="post-description secondary">
               {{ post.description }}
             </p>
-
-            <div class="post-description-skeleton">
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
           </div>
         </div>
       </a>
 
-      <div id="more-posts" class="accent">I want more !</div>
+      <div id="blog-action">
+        <div v-if="loading" class="spinner"></div>
+        <div
+          v-if="!firstCall && !loading && total !== offset"
+          id="more-posts"
+          class="accent"
+          @click="updateBlogPosts"
+        >
+          I want more !
+        </div>
+        <div
+          v-if="offset === total && offset !== 0 && total !== 0"
+          id="allPostsDisplayed"
+        >
+          You've reached the end 👍
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-import blogs from "@/data/blogs";
-
 export default {
   data() {
     return {
-      blogs,
+      posts: [],
+      total: 0,
+      offset: 0,
+      firstCall: true,
+      loading: false,
+      cancelToken: undefined,
     };
   },
-  async mounted() {
-    // TODO Implementer l'appel API
-    // this.$axios
-    //   .get("https://needlify.com/api/automation/MrAnyx/posts/get")
-    //   .then(({ data }) => {
-    //     console.log(data);
-    //   });
-    // console.log(this.blogs.posts);
-    // TODO Remove either axios or http module
-    // const blogs = await this.$http.$get(
-    //   "https://needlify.com/api/automation/MrAnyx/posts/get"
-    // );
-    // console.log(blogs);
+  mounted() {
+    this.updateBlogPosts();
   },
   methods: {
+    updateBlogPosts() {
+      if (this.cancelToken !== undefined) {
+        this.cancelToken.cancel("Operation cancel due to new request");
+      }
+
+      this.cancelToken = this.$axios.CancelToken.source();
+      this.loading = true;
+
+      const params = new URLSearchParams();
+      params.append("offset", this.offset);
+
+      this.$axios
+        .get("https://needlify.com/api/automation/MrAnyx/posts/get", {
+          params,
+          cancelToken: this.cancelToken.token,
+        })
+        .then(({ data }) => {
+          if (this.total === 0) {
+            this.posts = data.posts;
+            this.total = data.total;
+            this.offset = data.posts.length;
+          } else {
+            this.posts = this.posts.concat(data.posts);
+            this.offset += data.posts.length;
+          }
+          this.firstCall = false;
+          this.loading = false;
+        })
+        .catch((err) => {
+          this.loading = false;
+          if (this.$axios.isCancel(err)) {
+            console.log(`Cancelling previous request: ${err.message}`);
+          } else {
+            this.$swal("An error occured. Please try again", {
+              icon: "error",
+            });
+          }
+        });
+    },
     getDateFromTimestamp(timestamp) {
       const date = new Date(timestamp * 1000);
       return `${date.getDate()} ${date.toLocaleString("default", {
@@ -93,204 +134,163 @@ export default {
   row-gap: 20px;
   margin-top: 50px;
 
-  & #more-posts {
-    margin: 0 auto;
-    padding: 10px;
+  & #blog-action {
     margin-top: 20px;
-  }
 
-  &.loading {
-    .post-container {
-      background-color: $semi-dark-transparent;
-      transition: background-color 0.15s ease-in-out,
-        box-shadow 0.15s ease-in-out;
-      border-radius: 8px;
-      padding: 16px;
-      display: block;
-      text-decoration: none;
-      height: 170px;
+    & #more-posts {
+      margin: 0 auto;
+      padding: 10px;
+      width: 115px;
+      text-align: center;
+    }
 
-      &:hover {
-        background-color: $semi-dark-less-transparent;
-        box-shadow: 0 0 25px #12161d6c;
-      }
-
-      & .post-content {
-        display: flex;
-        column-gap: 16px;
-        position: relative;
-
-        & .image-container {
-          width: 200px;
-          height: calc(170px - 16px - 16px); /* card height - 2 * padding */
-          overflow: hidden;
-          border-radius: 6px;
-          margin-bottom: 14px;
-          position: relative;
-          background-color: $secondary-transparent;
-
-          & img {
-            display: none;
-          }
-        }
-
-        & .post-text {
-          flex: 1;
-
-          & .post-title {
-            margin-bottom: 14px;
-            -webkit-line-clamp: 1;
-            background-color: $secondary-transparent;
-            color: transparent;
-            border-radius: 6px;
-          }
-
-          & .post-description {
-            -webkit-line-clamp: 3;
-            font-size: 15px;
-            display: none;
-          }
-
-          & .post-description-skeleton {
-            width: 100%;
-            height: 64px;
-            display: flex;
-            justify-content: space-between;
-            flex-direction: column;
-
-            & div {
-              height: 14px;
-              background-color: $secondary-transparent;
-              border-radius: 4px;
-            }
-          }
-          & .post-title {
-            text-overflow: ellipsis;
-            overflow: hidden;
-            display: -webkit-box !important;
-            -webkit-box-orient: vertical;
-            white-space: normal;
-          }
-
-          & .post-info {
-            margin-bottom: 8px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-
-            & .post-date {
-              font-size: 14px;
-              background-color: $secondary-transparent;
-              color: transparent;
-              border-radius: 6px;
-            }
-
-            & .post-views {
-              display: flex;
-              align-items: center;
-              column-gap: 5px;
-              font-size: 14px;
-              background-color: $secondary-transparent;
-              color: transparent;
-              border-radius: 6px;
-
-              & .post-views-icon {
-                fill: transparent;
-                transform: scale(0.8);
-                width: 24px;
-                height: 24px;
-              }
-            }
-          }
-        }
-      }
+    & #allPostsDisplayed {
+      text-align: center;
+      color: $secondary;
     }
   }
 
-  &:not(.loading) {
-    .post-container {
-      background-color: $semi-dark-transparent;
-      transition: background-color 0.15s ease-in-out,
-        box-shadow 0.15s ease-in-out;
-      border-radius: 8px;
-      padding: 16px;
-      display: block;
-      text-decoration: none;
-      height: 170px;
+  .post-container {
+    background-color: $semi-dark-transparent;
+    transition: background-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    border-radius: 8px;
+    padding: 16px;
+    display: block;
+    text-decoration: none;
+    height: 170px;
 
-      &:hover {
-        background-color: $semi-dark-less-transparent;
-        box-shadow: 0 0 25px #12161d6c;
+    @include sm-screen {
+      height: 145px;
+    }
 
-        & .image-container img {
-          transform: scale(1.1);
+    @include xs-screen {
+      height: 135px;
+    }
+
+    &:hover {
+      background-color: $semi-dark-less-transparent;
+      box-shadow: 0 0 25px #12161d6c;
+
+      & .image-container img {
+        transform: scale(1.1);
+      }
+    }
+
+    & .post-content {
+      display: flex;
+      column-gap: 16px;
+      position: relative;
+
+      & .image-container {
+        width: 200px;
+        height: calc(170px - 16px - 16px); /* card height - 2 * padding */
+        overflow: hidden;
+        border-radius: 6px;
+        margin-bottom: 14px;
+        position: relative;
+
+        @include sm-screen {
+          width: 145px;
+          height: calc(145px - 16px - 16px); /* card height - 2 * padding */
+        }
+
+        @include xs-screen {
+          display: none;
+        }
+
+        & img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: transform 0.15s ease-in-out;
         }
       }
 
-      & .post-content {
-        display: flex;
-        column-gap: 16px;
-        position: relative;
+      & .post-text {
+        flex: 1;
 
-        & .image-container {
-          width: 200px;
-          height: calc(170px - 16px - 16px); /* card height - 2 * padding */
-          overflow: hidden;
-          border-radius: 6px;
+        & .post-title {
           margin-bottom: 14px;
-          position: relative;
+          -webkit-line-clamp: 1;
 
-          & img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.15s ease-in-out;
+          @include sm-screen {
+            margin-bottom: 8px;
+          }
+
+          @include xs-screen {
+            margin-bottom: 6px;
+            font-size: 16px;
           }
         }
 
-        & .post-text {
-          flex: 1;
-
-          & .post-title {
-            margin-bottom: 14px;
-            -webkit-line-clamp: 1;
+        & .post-description {
+          -webkit-line-clamp: 3;
+          font-size: 15px;
+          @include sm-screen {
+            font-size: 13px;
           }
 
-          & .post-description {
-            -webkit-line-clamp: 3;
-            font-size: 15px;
+          @include xs-screen {
+            font-size: 12px;
+          }
+        }
+
+        & .post-description,
+        & .post-title {
+          text-overflow: ellipsis;
+          overflow: hidden;
+          display: -webkit-box !important;
+          -webkit-box-orient: vertical;
+          white-space: normal;
+        }
+
+        & .post-info {
+          margin-bottom: 8px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          @include sm-screen {
+            margin-bottom: 4px;
           }
 
-          & .post-description,
-          & .post-title {
-            text-overflow: ellipsis;
-            overflow: hidden;
-            display: -webkit-box !important;
-            -webkit-box-orient: vertical;
-            white-space: normal;
+          @include xs-screen {
+            margin-bottom: 2px;
           }
 
-          & .post-info {
-            margin-bottom: 8px;
+          & .post-date {
+            font-size: 14px;
+            @include sm-screen {
+              font-size: 12px;
+            }
+            @include xs-screen {
+              font-size: 11px;
+            }
+          }
+
+          & .post-views {
             display: flex;
-            justify-content: space-between;
             align-items: center;
-
-            & .post-date {
-              font-size: 14px;
+            column-gap: 5px;
+            font-size: 14px;
+            @include sm-screen {
+              font-size: 12px;
+              column-gap: 2px;
+            }
+            @include xs-screen {
+              font-size: 11px;
             }
 
-            & .post-views {
-              display: flex;
-              align-items: center;
-              column-gap: 5px;
-              font-size: 14px;
-
-              & .post-views-icon {
-                fill: $secondary;
-                transform: scale(0.8);
-                width: 24px;
-                height: 24px;
+            & .post-views-icon {
+              fill: $secondary;
+              transform: scale(0.8);
+              width: 24px;
+              height: 24px;
+              @include sm-screen {
+                transform: scale(0.6);
+              }
+              @include xs-screen {
+                transform: scale(0.55);
               }
             }
           }
