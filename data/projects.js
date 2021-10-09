@@ -41,6 +41,15 @@ const projects = [
     wip: false,
   },
   {
+    title: "Pony plugin",
+    url: "https://github.com/MrAnyx/lite-plugin-pony",
+    description:
+      "This plugin allows you to use the Pony language within the Lite or Lite-XL editor",
+    image: "",
+    tags: ["Pony", "Lite", "Plugin"],
+    wip: false,
+  },
+  {
     title: "Shortly",
     url: "https://github.com/MrAnyx/shortly",
     description: "Very simple url shortner made with AdonisJS",
