@@ -69,10 +69,11 @@ export default {
     //     console.log(data);
     //   });
     // console.log(this.blogs.posts);
-    const blogs = await this.$http.$get(
-      "https://needlify.com/api/automation/MrAnyx/posts/get"
-    );
-    console.log(blogs);
+    // TODO Remove either axios or http module
+    // const blogs = await this.$http.$get(
+    //   "https://needlify.com/api/automation/MrAnyx/posts/get"
+    // );
+    // console.log(blogs);
   },
   methods: {
     getDateFromTimestamp(timestamp) {
