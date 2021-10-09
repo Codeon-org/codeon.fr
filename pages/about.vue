@@ -2,7 +2,7 @@
   <div id="about-wrapper">
     <h1 class="page-title">About</h1>
     <p>
-      As you may have seen, I'm Robin and I'm a
+      As you may have seen, I'm Robin (aka MrAnyx) and I'm a
       <b class="accent-text">tech and open-source enthusiast</b>. Since 2019,
       I'm specialized in <b class="accent-text">fullstack web development</b>. I
       am currently a work-study french engineering student in a company called
