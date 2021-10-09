@@ -61,7 +61,7 @@ export default {
       blogs,
     };
   },
-  mounted() {
+  async mounted() {
     // TODO Implementer l'appel API
     // this.$axios
     //   .get("https://needlify.com/api/automation/MrAnyx/posts/get")
@@ -69,6 +69,12 @@ export default {
     //     console.log(data);
     //   });
     // console.log(this.blogs.posts);
+
+    const blogs = await this.$http.$get(
+      "https://needlify.com/api/automation/MrAnyx/posts/get"
+    );
+
+    console.log(blogs); // log "nuxt"
   },
   methods: {
     getDateFromTimestamp(timestamp) {
