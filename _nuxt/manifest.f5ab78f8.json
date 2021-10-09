@@ -1,7 +1,6 @@
 {
   "name": "codeon.fr",
   "short_name": "codeon.fr",
-  "description": "## Build Setup",
   "icons": [
     {
       "src": "/_nuxt/icons/icon_64x64.f36022.png",
