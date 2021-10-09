@@ -142,6 +142,14 @@ export default {
     text-decoration: none;
     height: 170px;
 
+    @include sm-screen {
+      height: 145px;
+    }
+
+    @include xs-screen {
+      height: 135px;
+    }
+
     &:hover {
       background-color: $semi-dark-less-transparent;
       box-shadow: 0 0 25px #12161d6c;
@@ -164,6 +172,15 @@ export default {
         margin-bottom: 14px;
         position: relative;
 
+        @include sm-screen {
+          width: 145px;
+          height: calc(145px - 16px - 16px); /* card height - 2 * padding */
+        }
+
+        @include xs-screen {
+          display: none;
+        }
+
         & img {
           width: 100%;
           height: 100%;
@@ -178,11 +195,27 @@ export default {
         & .post-title {
           margin-bottom: 14px;
           -webkit-line-clamp: 1;
+
+          @include sm-screen {
+            margin-bottom: 8px;
+          }
+
+          @include xs-screen {
+            margin-bottom: 6px;
+            font-size: 16px;
+          }
         }
 
         & .post-description {
           -webkit-line-clamp: 3;
           font-size: 15px;
+          @include sm-screen {
+            font-size: 13px;
+          }
+
+          @include xs-screen {
+            font-size: 12px;
+          }
         }
 
         & .post-description,
@@ -200,8 +233,22 @@ export default {
           justify-content: space-between;
           align-items: center;
 
+          @include sm-screen {
+            margin-bottom: 4px;
+          }
+
+          @include xs-screen {
+            margin-bottom: 2px;
+          }
+
           & .post-date {
             font-size: 14px;
+            @include sm-screen {
+              font-size: 12px;
+            }
+            @include xs-screen {
+              font-size: 11px;
+            }
           }
 
           & .post-views {
@@ -209,12 +256,25 @@ export default {
             align-items: center;
             column-gap: 5px;
             font-size: 14px;
+            @include sm-screen {
+              font-size: 12px;
+              column-gap: 2px;
+            }
+            @include xs-screen {
+              font-size: 11px;
+            }
 
             & .post-views-icon {
               fill: $secondary;
               transform: scale(0.8);
               width: 24px;
               height: 24px;
+              @include sm-screen {
+                transform: scale(0.6);
+              }
+              @include xs-screen {
+                transform: scale(0.55);
+              }
             }
           }
         }
