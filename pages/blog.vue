@@ -71,6 +71,7 @@ export default {
       offset: 0,
       firstCall: true,
       loading: false,
+      cancelToken: undefined,
     };
   },
   mounted() {
@@ -78,6 +79,11 @@ export default {
   },
   methods: {
     updateBlogPosts() {
+      if (this.cancelToken !== undefined) {
+        this.cancelToken.cancel("Operation cancel due to new request");
+      }
+
+      this.cancelToken = this.$axios.CancelToken.source();
       this.loading = true;
 
       const params = new URLSearchParams();
@@ -86,6 +92,7 @@ export default {
       this.$axios
         .get("https://needlify.com/api/automation/MrAnyx/posts/get", {
           params,
+          cancelToken: this.cancelToken.token,
         })
         .then(({ data }) => {
           if (this.total === 0) {
@@ -98,6 +105,16 @@ export default {
           }
           this.firstCall = false;
           this.loading = false;
+        })
+        .catch((err) => {
+          this.loading = false;
+          if (this.$axios.isCancel(err)) {
+            console.log(`Cancelling previous request: ${err.message}`);
+          } else {
+            this.$swal("An error occured. Please try again", {
+              icon: "error",
+            });
+          }
         });
     },
     getDateFromTimestamp(timestamp) {

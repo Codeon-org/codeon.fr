@@ -19,7 +19,8 @@
     "macy": "^2.5.1",
     "nuxt": "^2.15.7",
     "vue-eva-icons": "^1.1.1",
-    "vue-simple-icons": "^4.7.0"
+    "vue-simple-icons": "^4.7.0",
+    "vue-swal": "^1.0.0"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.15.8",

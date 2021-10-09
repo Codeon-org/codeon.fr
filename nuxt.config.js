@@ -35,7 +35,7 @@ export default {
   css: ["@/assets/scss/reset.scss", "@/assets/scss/global.scss"],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [{ src: "@/plugins/eva-icons" }],
+  plugins: [{ src: "@/plugins/eva-icons" }, { src: "@/plugins/swal" }],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -56,7 +56,9 @@ export default {
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  build: {
+    vendor: ["vue-swal"],
+  },
 
   // PWA : https://pwa.nuxtjs.org/setup
   pwa: {},
