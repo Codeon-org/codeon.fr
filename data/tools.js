@@ -334,6 +334,11 @@ const tools = [
         description: "Classic but still effective.",
       },
       {
+        name: "Gitmoji",
+        link: "https://marketplace.visualstudio.com/items?itemName=Vtrois.gitmoji-vscode",
+        description: "I finally use Gitmoji commit messages 📝",
+      },
+      {
         name: "Fluent Icons",
         link: "https://marketplace.visualstudio.com/items?itemName=miguelsolorio.fluent-icons",
         description: "To improve the overall look of VSCode.",
