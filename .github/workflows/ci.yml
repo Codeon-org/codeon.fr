@@ -14,7 +14,7 @@ on:
 jobs:
   ci:
     runs-on: ${{ matrix.os }}
-    if: github.ref != 'refs/heads/master'
+    if: github.ref == 'refs/heads/master'
     strategy:
       matrix:
         os: [ubuntu-latest]
