@@ -39,12 +39,12 @@ export default {
       {
         hid: "twitter:image:src",
         property: "twitter:image:src",
-        content: "/og_twitter.png",
+        content: "/og_image.png",
       },
       {
         hid: "twitter:image",
         property: "twitter:image",
-        content: "/og_twitter.png",
+        content: "/og_image.png",
       },
 
       // ----------------------------------
