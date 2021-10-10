@@ -74,6 +74,32 @@ export default {
       cancelToken: undefined,
     };
   },
+  head: {
+    title: "Blog posts - Robin from Codeon 👋",
+    meta: [
+      {
+        hid: "description",
+        name: "description",
+        content: "Take a look at the articles I posted on Needlify",
+      },
+      {
+        hid: "og:description",
+        property: "og:description",
+        content: "Take a look at the articles I posted on Needlify",
+      },
+      {
+        hid: "og:title",
+        property: "og:title",
+        content: "Blog posts - Robin from Codeon 👋",
+      },
+
+      {
+        hid: "twitter:title",
+        property: "twitter:title",
+        content: "Blog posts - Robin from Codeon 👋",
+      },
+    ],
+  },
   mounted() {
     this.updateBlogPosts();
   },
@@ -109,6 +135,7 @@ export default {
         .catch((err) => {
           this.loading = false;
           if (this.$axios.isCancel(err)) {
+            // eslint-disable-next-line no-console
             console.log(`Cancelling previous request: ${err.message}`);
           } else {
             this.$swal("An error occured. Please try again", {

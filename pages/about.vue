@@ -140,6 +140,32 @@ export default {
       jobs,
     };
   },
+  head: {
+    title: "About me - Robin from Codeon 👋",
+    meta: [
+      {
+        hid: "description",
+        name: "description",
+        content: "Learn more about me and my experience as a developer",
+      },
+      {
+        hid: "og:description",
+        property: "og:description",
+        content: "Learn more about me and my experience as a developer",
+      },
+      {
+        hid: "og:title",
+        property: "og:title",
+        content: "About me - Robin from Codeon 👋",
+      },
+
+      {
+        hid: "twitter:title",
+        property: "twitter:title",
+        content: "About me - Robin from Codeon 👋",
+      },
+    ],
+  },
 };
 </script>
 
