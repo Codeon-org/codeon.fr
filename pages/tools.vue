@@ -34,6 +34,34 @@ export default {
       tools,
     };
   },
+  head: {
+    title: "Tools - Robin from Codeon 👋",
+    meta: [
+      {
+        hid: "description",
+        name: "description",
+        content:
+          "Discover the tools and software that I use on a daily basis as a web developer and an engineering student",
+      },
+      {
+        hid: "og:description",
+        property: "og:description",
+        content:
+          "Discover the tools and software that I use on a daily basis as a web developer and an engineering student",
+      },
+      {
+        hid: "og:title",
+        property: "og:title",
+        content: "Tools - Robin from Codeon 👋",
+      },
+
+      {
+        hid: "twitter:title",
+        property: "twitter:title",
+        content: "Tools - Robin from Codeon 👋",
+      },
+    ],
+  },
 };
 </script>
 

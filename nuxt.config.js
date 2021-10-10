@@ -1,24 +1,77 @@
 export default {
   target: "static",
-  // router: {
-  //   base: "/codeon.fr/",
-  // },
 
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "Robin from Codeon 👋",
+    title: "Robin from Codeon 👋 - Fullstack developer",
     htmlAttrs: {
       lang: "en",
     },
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "" },
+      { name: "twitter:widgets:new-embed-design", content: "on" },
       { name: "format-detection", content: "telephone=no" },
-      // TODO Ajouter un og image
+      { name: "theme-color", content: "#FFD369" },
+      {
+        name: "robots",
+        content:
+          "max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      },
+      {
+        hid: "og:image",
+        property: "og:image",
+        content: "/og_image.png",
+      },
+      {
+        hid: "og:site_name",
+        property: "og:site_name",
+        content: "Codeon",
+      },
+      {
+        hid: "twitter:card",
+        property: "twitter:card",
+        content: "summary_large_image",
+      },
+      {
+        hid: "twitter:image:src",
+        property: "twitter:image:src",
+        content: "/og_twitter.png",
+      },
+      {
+        hid: "twitter:image",
+        property: "twitter:image",
+        content: "/og_twitter.png",
+      },
+
+      // ----------------------------------
+
+      {
+        hid: "description",
+        name: "description",
+        content:
+          "I'm a french software developer and engineer student. Well, I'm also a UI designer in my spare time",
+      },
+      {
+        hid: "og:description",
+        property: "og:description",
+        content:
+          "I'm a french software developer and engineer student. Well, I'm also a UI designer in my spare time",
+      },
+      {
+        hid: "og:title",
+        property: "og:title",
+        content: "Robin from Codeon 👋 - Fullstack developer",
+      },
+
+      {
+        hid: "twitter:title",
+        property: "twitter:title",
+        content: "Robin from Codeon 👋 - Fullstack developer",
+      },
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
   },

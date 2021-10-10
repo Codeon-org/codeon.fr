@@ -14,7 +14,7 @@
       that people can give their feedback.
     </p>
     <p>
-      I first experienced web development when I was in 9nt grade. With a friend
+      I first experienced web development when I was in 9th grade. With a friend
       of mine, we tried to create our very first website using HTML and CSS
       thanks to the explanations and tutorials that we could find on "le site du
       zéro" (now known as
@@ -97,12 +97,76 @@
       This allows me to plan my weeks and days to be more productive.
     </p>
 
+    <div id="experience-wrapper">
+      <h2 class="page-title-h2">Experience</h2>
+
+      <div id="jobs-wrapper">
+        <div v-for="(job, jobIdx) in jobs" :key="jobIdx" class="job-container">
+          <div class="job-info">
+            <h3 class="job-title">{{ job.title }}</h3>
+            <div class="job-date secondary">
+              {{ job.from
+              }}<span v-if="job.to !== ''" class="secondary">
+                - {{ job.to }}</span
+              >
+            </div>
+          </div>
+          <p class="job-company">{{ job.company }}</p>
+          <p class="job-tech secondary">Technologies :</p>
+          <span
+            v-for="(technology, technologyIdx) in job.technologies"
+            :key="technologyIdx"
+            class="accent hover tech"
+            >{{ technology }}</span
+          >
+          <ul class="job-actions">
+            <li v-for="(actions, actionsIdx) in job.actions" :key="actionsIdx">
+              {{ actions }}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
     <p class="last">Hope you enjoyed finding out more about me 👍</p>
   </div>
 </template>
 
 <script>
-export default {};
+import jobs from "@/data/experience";
+export default {
+  data() {
+    return {
+      jobs,
+    };
+  },
+  head: {
+    title: "About me - Robin from Codeon 👋",
+    meta: [
+      {
+        hid: "description",
+        name: "description",
+        content: "Learn more about me and my experience as a developer",
+      },
+      {
+        hid: "og:description",
+        property: "og:description",
+        content: "Learn more about me and my experience as a developer",
+      },
+      {
+        hid: "og:title",
+        property: "og:title",
+        content: "About me - Robin from Codeon 👋",
+      },
+
+      {
+        hid: "twitter:title",
+        property: "twitter:title",
+        content: "About me - Robin from Codeon 👋",
+      },
+    ],
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -113,6 +177,80 @@ export default {};
 
     &:not(.last) {
       margin-bottom: 20px;
+    }
+  }
+}
+
+#experience-wrapper {
+  margin-bottom: 40px;
+
+  & #jobs-wrapper {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 55px;
+    & .job-container {
+      & .job-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 6px;
+
+        @include sm-screen {
+          display: block;
+          margin-bottom: 10px;
+        }
+
+        & .job-title {
+          font-size: 18px;
+        }
+
+        & .job-date {
+          font-size: 14px;
+          font-style: italic;
+        }
+      }
+
+      & .job-company {
+        margin-bottom: 5px;
+        font-size: 14px;
+        font-weight: bold;
+      }
+
+      & .job-tech {
+        margin-bottom: 12px;
+        font-size: 14px;
+        display: inline;
+        // font-style: italic;
+      }
+
+      span.tech {
+        display: inline-block;
+        margin-right: 8px;
+        font-size: 14px;
+        margin-top: 8px;
+      }
+
+      & .job-actions {
+        list-style: none;
+        margin-top: 15px;
+
+        & li {
+          line-height: 28px;
+          position: relative;
+          margin-left: 20px;
+          color: $light-transparent;
+        }
+
+        & li::before {
+          position: absolute;
+          content: "\2022";
+          color: $secondary-transparent;
+          font-weight: bold;
+          display: inline-block;
+          left: -18px;
+        }
+      }
     }
   }
 }

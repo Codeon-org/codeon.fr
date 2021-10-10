@@ -39,7 +39,7 @@
     background-color: $accent-semi-transparent;
   }
 
-  &:active {
+  &:not(.hover):active {
     background-color: $accent-semi-less-transparent;
   }
 }
@@ -55,6 +55,12 @@
 .page-title {
   font-size: 46px;
   line-height: 95px;
+}
+
+
+.page-title-h2 {
+  font-size: 36px;
+  line-height: 75px;
 }
 
 .page-description {

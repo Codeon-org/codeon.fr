@@ -27,9 +27,10 @@
       <a
         href="https://github.com/Codeon-org/codeon.fr/blob/master/LICENSE"
         class="accent"
+        target="_blank"
         >CC-BY-SA-4.0</a
       >
-      © {{ year }} <a href="#" class="accent">Codeon</a>
+      © {{ year }} <nuxt-link to="/" class="accent">Codeon</nuxt-link>
     </div>
   </div>
 </template>
