@@ -53,13 +53,13 @@ export default {
         hid: "description",
         name: "description",
         content:
-          "I'm a french software developer and engineer student. Well, I'm also a UI designer in my spare time",
+          "I'm a french fullstack developer and engineer student. Well, I'm also a UI designer in my spare time",
       },
       {
         hid: "og:description",
         property: "og:description",
         content:
-          "I'm a french software developer and engineer student. Well, I'm also a UI designer in my spare time",
+          "I'm a french fullstack developer and engineer student. Well, I'm also a UI designer in my spare time",
       },
       {
         hid: "og:title",
