@@ -14,7 +14,7 @@
       that people can give their feedback.
     </p>
     <p>
-      I first experienced web development when I was in 9nt grade. With a friend
+      I first experienced web development when I was in 9th grade. With a friend
       of mine, we tried to create our very first website using HTML and CSS
       thanks to the explanations and tutorials that we could find on "le site du
       zéro" (now known as

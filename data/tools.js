@@ -78,7 +78,7 @@ const tools = [
         name: "Notion",
         link: "https://www.notion.so/",
         description:
-          "Simply he best tool to organize projects, ideas, meetings, ...",
+          "Simply the best tool to organize projects, ideas, meetings, ...",
       },
       {
         name: "Pomotroid",
