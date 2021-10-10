@@ -99,6 +99,33 @@
 
     <div id="experience-wrapper">
       <h2 class="page-title-h2">Experience</h2>
+
+      <div id="jobs-wrapper">
+        <div v-for="(job, jobIdx) in jobs" :key="jobIdx" class="job-container">
+          <div class="job-info">
+            <h3 class="job-title">{{ job.title }}</h3>
+            <div class="job-date secondary">
+              {{ job.from
+              }}<span v-if="job.to !== ''" class="secondary">
+                - {{ job.to }}</span
+              >
+            </div>
+          </div>
+          <p class="job-company">{{ job.company }}</p>
+          <p class="job-tech secondary">Technologies :</p>
+          <span
+            v-for="(technology, technologyIdx) in job.technologies"
+            :key="technologyIdx"
+            class="accent hover tech"
+            >{{ technology }}</span
+          >
+          <ul class="job-actions">
+            <li v-for="(actions, actionsIdx) in job.actions" :key="actionsIdx">
+              {{ actions }}
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
 
     <p class="last">Hope you enjoyed finding out more about me 👍</p>
@@ -106,7 +133,14 @@
 </template>
 
 <script>
-export default {};
+import jobs from "@/data/experience";
+export default {
+  data() {
+    return {
+      jobs,
+    };
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -117,6 +151,80 @@ export default {};
 
     &:not(.last) {
       margin-bottom: 20px;
+    }
+  }
+}
+
+#experience-wrapper {
+  margin-bottom: 40px;
+
+  & #jobs-wrapper {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 55px;
+    & .job-container {
+      & .job-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 6px;
+
+        @include sm-screen {
+          display: block;
+          margin-bottom: 10px;
+        }
+
+        & .job-title {
+          font-size: 18px;
+        }
+
+        & .job-date {
+          font-size: 14px;
+          font-style: italic;
+        }
+      }
+
+      & .job-company {
+        margin-bottom: 5px;
+        font-size: 14px;
+        font-weight: bold;
+      }
+
+      & .job-tech {
+        margin-bottom: 12px;
+        font-size: 14px;
+        display: inline;
+        // font-style: italic;
+      }
+
+      span.tech {
+        display: inline-block;
+        margin-right: 8px;
+        font-size: 14px;
+        margin-top: 8px;
+      }
+
+      & .job-actions {
+        list-style: none;
+        margin-top: 15px;
+
+        & li {
+          line-height: 28px;
+          position: relative;
+          margin-left: 20px;
+          color: $light-transparent;
+        }
+
+        & li::before {
+          position: absolute;
+          content: "\2022";
+          color: $secondary-transparent;
+          font-weight: bold;
+          display: inline-block;
+          left: -18px;
+        }
+      }
     }
   }
 }

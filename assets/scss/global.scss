@@ -39,7 +39,7 @@
     background-color: $accent-semi-transparent;
   }
 
-  &:active {
+  &:not(.hover):active {
     background-color: $accent-semi-less-transparent;
   }
 }
