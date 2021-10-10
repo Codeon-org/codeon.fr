@@ -91,6 +91,33 @@ const projects = [
     wip: true,
   },
   {
+    title: "Nuit de l'info 2020",
+    url: "https://github.com/CrabGang-Team/crabgang2020",
+    description:
+      'For the third time in a row, accompanied by the Crab\'Gang team, we participated in the night of info. This year was, all the same, a bit special since, instead of regrouping with the team, we were each at home working on this year\'s project. Being our last participation, we wanted to finish in style. In this way, we have been rewarded 3 times. We first finished second in the challenge "Carbon code: sensitize users to the impact of their choices" proposed by the company Leroy Merlin in which we had to, via the use of a REST API created by us , show the CO2 consumption of the pages viewed by a user. We were also rewarded for the first time by the company Apside TOP by finishing second in the challenge "1337 5P34K" in which we had to transform the entire text of our site into Leet Speak. Finally, we were once again rewarded by this same company by finishing first in the "Oualle Strite Ingliche" challenge whose main objective was to create a website accessible by English and French speakers. Finally, Coddity praised our performance by awarding us fifth place out of a total of 35 for the "EMERGENCY MEETING !!!" challenge. in which we had to bring up references to the video game "Among us".',
+    image: "",
+    tags: ["Team", "Project", "Event", "1st place"],
+    wip: false,
+  },
+  {
+    title: "Nuit de l'info 2019",
+    url: "https://github.com/MrAnyx/NuitInfo2019",
+    description:
+      'This year, we have been rewarded twice. Indeed, we finished second in the challenge: "Accessible to all users", offered by the company Altran. By accepting this challenge, we had to make our website accessible to everyone. We also finished third in the "Anime Your Victory Dance" challenge from the Alten company. This proposed to the teams to add a hidden page in which was a character doing a choreography performed using a JavaScript library: Three.js.',
+    image: "",
+    tags: ["Team", "Project", "Event", "1st place"],
+    wip: false,
+  },
+  {
+    title: "Nuit de l'info 2018",
+    url: "https://github.com/MrAnyx/CrabGang.github.io",
+    description:
+      'La nuit de l\'Info is a national event that brings together thousands of students across France. During it, we took first place in the challenge: "U talkin’to me ??". The goal of it was to achieve the main theme of the night of info while adding functionality to the Google Assistant',
+    image: "",
+    tags: ["Team", "Project", "Event", "1st place"],
+    wip: false,
+  },
+  {
     title: "FlappyBird",
     url: "https://github.com/MrAnyx/FlappyBird",
     description: "Obviously, this is the FlappyBird game written in Processing",
