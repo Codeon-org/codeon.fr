@@ -5,7 +5,7 @@
     </div>
     <h1>Hey, I'm Robin 👋</h1>
     <p class="first">
-      <b>I'm a french software developer and engineer student</b>. Well, I'm
+      <b>I'm a french fullstack developer and engineer student</b>. Well, I'm
       also a UI designer in my spare time. I'm currently working at
       <a href="https://icohup.com/" target="_blank" class="accent">Icohup</a>, a
       french startup based in Limoges and I'm also an independent with my
@@ -23,13 +23,13 @@ export default {
         hid: "description",
         name: "description",
         content:
-          "I'm a french software developer and engineer student. Well, I'm also a UI designer in my spare time",
+          "I'm a french fullstack developer and engineer student. Well, I'm also a UI designer in my spare time",
       },
       {
         hid: "og:description",
         property: "og:description",
         content:
-          "I'm a french software developer and engineer student. Well, I'm also a UI designer in my spare time",
+          "I'm a french fullstack developer and engineer student. Well, I'm also a UI designer in my spare time",
       },
       {
         hid: "og:title",
