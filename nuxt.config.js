@@ -27,6 +27,11 @@ export default {
         content: "https://codeon.fr/og_image.png",
       },
       {
+        hid: "twitter:creator",
+        name: "twitter:creator",
+        content: "@MrAnyx",
+      },
+      {
         hid: "og:site_name",
         property: "og:site_name",
         content: "Codeon",
@@ -38,12 +43,12 @@ export default {
       },
       {
         hid: "twitter:image:src",
-        property: "twitter:image:src",
+        name: "twitter:image:src",
         content: "https://codeon.fr/og_image.png",
       },
       {
         hid: "twitter:image",
-        property: "twitter:image",
+        name: "twitter:image",
         content: "https://codeon.fr/og_image.png",
       },
 
