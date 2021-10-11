@@ -24,7 +24,7 @@ export default {
       {
         hid: "og:image",
         property: "og:image",
-        content: "/og_image.png",
+        content: "https://codeon.fr/og_image.png",
       },
       {
         hid: "og:site_name",
@@ -39,12 +39,12 @@ export default {
       {
         hid: "twitter:image:src",
         property: "twitter:image:src",
-        content: "/og_image.png",
+        content: "https://codeon.fr/og_image.png",
       },
       {
         hid: "twitter:image",
         property: "twitter:image",
-        content: "/og_image.png",
+        content: "https://codeon.fr/og_image.png",
       },
 
       // ----------------------------------
