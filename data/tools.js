@@ -81,6 +81,11 @@ const tools = [
           "Simply the best tool to organize projects, ideas, meetings, ...",
       },
       {
+        name: "Standard Notes",
+        link: "https://standardnotes.com/",
+        description: "A secure note taking app.",
+      },
+      {
         name: "Pomotroid",
         link: "https://splode.github.io/pomotroid/",
         description: "Small but very efficient pomodoro timer.",
@@ -122,9 +127,9 @@ const tools = [
         description: "Organize conversations, communities, servers, ...",
       },
       {
-        name: "Mailspring",
-        link: "https://getmailspring.com/",
-        description: "Beautiful email client.",
+        name: "Thunderbird",
+        link: "https://www.thunderbird.net/fr/",
+        description: "Customizable email client.",
       },
       {
         name: "Signal",
@@ -193,8 +198,8 @@ const tools = [
     anchor: "design",
     items: [
       {
-        name: "Adobe XD",
-        link: "https://www.adobe.com/products/xd.html",
+        name: "Figma",
+        link: "https://www.figma.com/",
         description: "Excellent for creation and prototyping.",
       },
       {
@@ -239,6 +244,11 @@ const tools = [
         link: "https://docs.microsoft.com/en-us/windows/wsl/install",
         description:
           "Allow you to use windows and linux at the same time. Best of both worlds.",
+      },
+      {
+        name: "Docker",
+        link: "https://www.docker.com/",
+        description: "Accelerate the way to build apps.",
       },
       {
         name: "TablePlus",
@@ -379,6 +389,11 @@ const tools = [
         description: "Develop a project on WSL using VSCode.",
       },
       {
+        name: "Docker",
+        link: "https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker",
+        description: "Create a complete development environment.",
+      },
+      {
         name: "Vetur",
         link: "https://marketplace.visualstudio.com/items?itemName=octref.vetur",
         description: "Make the VueJS development way easier.",
@@ -398,11 +413,6 @@ const tools = [
         name: "Javascript",
         link: "https://www.javascript.com/",
         description: "Dynamize websites",
-      },
-      {
-        name: "Typescript",
-        link: "https://www.typescriptlang.org/",
-        description: "Create stable apps with types",
       },
       {
         name: "PHP",
@@ -428,7 +438,12 @@ const tools = [
       {
         name: "Symfony",
         link: "https://symfony.com/",
-        description: "To create websites with a string PHP backend.",
+        description: "To create websites with a strong PHP backend.",
+      },
+      {
+        name: "Laravel",
+        link: "https://laravel.com/",
+        description: "A very pleasant backend framework.",
       },
       {
         name: "VueJS",
