@@ -15,7 +15,7 @@
   "dependencies": {
     "@nuxt/http": "^0.6.4",
     "@nuxtjs/axios": "^5.13.6",
-    "core-js": "^3.18.2",
+    "core-js": "^3.21.1",
     "macy": "^2.5.1",
     "nuxt": "^2.15.7",
     "vue-eva-icons": "^1.1.1",
@@ -23,21 +23,21 @@
     "vue-swal": "^1.0.0"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.15.8",
+    "@babel/eslint-parser": "^7.17.0",
     "@nuxtjs/eslint-config": "^6.0.1",
     "@nuxtjs/eslint-module": "^3.0.2",
     "@nuxtjs/pwa": "^3.3.5",
     "@nuxtjs/style-resources": "^1.2.1",
     "eslint": "^7.29.0",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-nuxt": "^2.0.0",
+    "eslint-plugin-nuxt": "^3.1.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-vue": "^7.19.1",
-    "fibers": "^5.0.0",
+    "eslint-plugin-vue": "^8.4.1",
+    "fibers": "^5.0.1",
     "gh-pages": "^3.2.3",
-    "prettier": "^2.3.2",
+    "prettier": "^2.5.1",
     "push-dir": "^0.4.1",
-    "sass": "^1.42.1",
+    "sass": "^1.49.8",
     "sass-loader": "^10.2.0"
   }
 }
