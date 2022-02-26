@@ -97,6 +97,49 @@
       This allows me to plan my weeks and days to be more productive.
     </p>
 
+    <div id="education-wrapper">
+      <h2 class="page-title-h2">Education</h2>
+
+      <div id="schools-wrapper">
+        <div
+          v-for="(edu, eduIdx) in educations"
+          :key="eduIdx"
+          class="school-container"
+        >
+          <div class="school-info">
+            <h3 class="school-name">{{ edu.school }}</h3>
+            <div class="school-date secondary">
+              {{ edu.from
+              }}<span v-if="edu.to !== ''" class="secondary">
+                - {{ edu.to }}</span
+              >
+            </div>
+          </div>
+
+          <p class="school-location">{{ edu.city }} - {{ edu.country }}</p>
+
+          <p class="school-fields secondary">Fields :</p>
+          <span
+            v-for="(field, fieldIdx) in edu.fields"
+            :key="fieldIdx"
+            class="accent hover field"
+            >{{ field }}</span
+          >
+          <div v-if="edu.diplomas">
+            <ul class="school-diplomas">
+              <li
+                v-for="(diploma, diplomasIdx) in edu.diplomas"
+                :key="diplomasIdx"
+              >
+                {{ diploma.date }} - <b>{{ diploma.name }}</b>
+                {{ diploma.info }}
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div id="experience-wrapper">
       <h2 class="page-title-h2">Experience</h2>
 
@@ -134,10 +177,13 @@
 
 <script>
 import jobs from "@/data/experience";
+import educations from "@/data/education";
+
 export default {
   data() {
     return {
       jobs,
+      educations,
     };
   },
   head: {
@@ -181,16 +227,20 @@ export default {
   }
 }
 
-#experience-wrapper {
+#experience-wrapper,
+#education-wrapper {
   margin-bottom: 40px;
 
-  & #jobs-wrapper {
+  #jobs-wrapper,
+  #schools-wrapper {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
     row-gap: 55px;
-    & .job-container {
-      & .job-info {
+    .job-container,
+    .school-container {
+      .job-info,
+      .school-info {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -201,54 +251,60 @@ export default {
           margin-bottom: 10px;
         }
 
-        & .job-title {
+        .job-title,
+        .school-name {
           font-size: 18px;
         }
 
-        & .job-date {
+        .job-date,
+        .school-date {
           font-size: 14px;
           font-style: italic;
         }
       }
 
-      & .job-company {
+      .job-company,
+      .school-location {
         margin-bottom: 5px;
         font-size: 14px;
         font-weight: bold;
       }
 
-      & .job-tech {
+      .job-tech,
+      .school-fields {
         margin-bottom: 12px;
         font-size: 14px;
         display: inline;
         // font-style: italic;
       }
 
-      span.tech {
+      span.tech,
+      span.field {
         display: inline-block;
         margin-right: 8px;
         font-size: 14px;
         margin-top: 8px;
       }
 
-      & .job-actions {
+      .job-actions,
+      .school-diplomas {
         list-style: none;
         margin-top: 15px;
 
-        & li {
+        li {
           line-height: 28px;
           position: relative;
           margin-left: 20px;
           color: $light-transparent;
-        }
 
-        & li::before {
-          position: absolute;
-          content: "\2022";
-          color: $secondary-transparent;
-          font-weight: bold;
-          display: inline-block;
-          left: -18px;
+          &::before {
+            position: absolute;
+            content: "\2022";
+            color: $secondary-transparent;
+            font-weight: bold;
+            display: inline-block;
+            left: -18px;
+          }
         }
       }
     }
