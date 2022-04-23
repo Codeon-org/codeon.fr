@@ -1,17 +1,17 @@
 const educations = [
   {
     school: "3iL Ingénieurs",
-    fields: ["Computer Science"],
+    fields: ["Computer Science", "Maths", "Management", "Network"],
     city: "Limoges",
     country: "France",
     from: "September 2017",
     to: "July 2022",
     diplomas: [
-      {
-        date: "September 2022",
-        name: "Engineering Degree",
-        info: "with high honors",
-      },
+      // {
+      //   date: "September 2022",
+      //   name: "Engineering Degree",
+      //   info: "with high honors",
+      // },
       {
         date: "June 2021",
         name: "TOEIC",
@@ -21,7 +21,12 @@ const educations = [
   },
   {
     school: "Université du Québec à Chicoutimi (UQAC)",
-    fields: ["Computer Science", "Maths"],
+    fields: [
+      "Computer Science",
+      "Maths",
+      "Artificial Intelligence",
+      "Machine Learning",
+    ],
     city: "Chicoutimi",
     country: "Québec",
     from: "September 2021",
@@ -29,7 +34,7 @@ const educations = [
   },
   {
     school: "Integrated Preparatory Class (3iL)",
-    fields: ["Computer Science", "Maths"],
+    fields: ["Computer Science", "Maths", "Management"],
     city: "Limoges",
     country: "France",
     from: "September 2017",
