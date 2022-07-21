@@ -228,11 +228,6 @@ const tools = [
         link: "https://www.microsoft.com/en-ca/p/ubuntu-2004-lts/9n6svws3rx71",
         description: "Real Linux kernel on Windows.",
       },
-      {
-        name: "Kali Linux",
-        link: "https://www.microsoft.com/en-ca/p/kali-linux/9pkr34tncv07",
-        description: "To learn ethical hacking.",
-      },
     ],
   },
   {
@@ -271,6 +266,11 @@ const tools = [
         description: "Who doesn't use Github ?",
       },
       {
+        name: "Github Codespace",
+        link: "https://github.com/features/codespaces",
+        description: "This allows me to code wherever i want.",
+      },
+      {
         name: "Mailtrap",
         link: "https://mailtrap.io/",
         description: "Flexible mail API.",
@@ -279,6 +279,11 @@ const tools = [
         name: "Composer",
         link: "https://getcomposer.org/",
         description: "PHP package manager.",
+      },
+      {
+        name: "PNPM",
+        link: "https://pnpm.io/",
+        description: "Node package manager.",
       },
       {
         name: "Regex 101",
@@ -334,9 +339,14 @@ const tools = [
     anchor: "vscode-extensions",
     items: [
       {
-        name: "Bearded Theme Arc EolStorm",
-        link: "https://chrome.google.com/webstore/detail/vuejs-devtools/ljjemllljcmogpfapbkkighbhhppjdbg",
-        description: "Great theme for bearded men 🧔",
+        name: "Github Dark",
+        link: "https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme",
+        description: "Great theme for developers.",
+      },
+      {
+        name: "Github Codespaces",
+        link: "https://marketplace.visualstudio.com/items?itemName=GitHub.codespaces",
+        description: "To be able to connect vscode to a remode codespace.",
       },
       {
         name: "Material Icons Theme",
@@ -410,14 +420,19 @@ const tools = [
     anchor: "programming-languages",
     items: [
       {
+        name: "PHP",
+        link: "https://www.php.net/",
+        description: "Why not 😄",
+      },
+      {
         name: "Javascript",
         link: "https://www.javascript.com/",
         description: "Dynamize websites",
       },
       {
-        name: "PHP",
-        link: "https://www.php.net/",
-        description: "Why not 😄",
+        name: "Typescript",
+        link: "https://www.typescriptlang.org/",
+        description: "Javascript with types.",
       },
       {
         name: "Python",
@@ -431,19 +446,9 @@ const tools = [
     anchor: "frameworks",
     items: [
       {
-        name: "Bootstrap",
-        link: "https://getbootstrap.com/",
-        description: "Good for prototyping.",
-      },
-      {
         name: "Symfony",
         link: "https://symfony.com/",
         description: "To create websites with a strong PHP backend.",
-      },
-      {
-        name: "Laravel",
-        link: "https://laravel.com/",
-        description: "A very pleasant backend framework.",
       },
       {
         name: "VueJS",
@@ -454,6 +459,16 @@ const tools = [
         name: "ViteJS",
         link: "https://vitejs.dev/",
         description: "Speed up the development process.",
+      },
+      {
+        name: "Bootstrap",
+        link: "https://getbootstrap.com/",
+        description: "Good for prototyping.",
+      },
+      {
+        name: "Laravel",
+        link: "https://laravel.com/",
+        description: "A very pleasant backend framework.",
       },
       {
         name: "Electron",
