@@ -116,7 +116,7 @@
             </div>
           </div>
 
-          <p class="school-location">{{ edu.city }} - {{ edu.country }}</p>
+          <p class="school-location">{{ edu.country }}</p>
 
           <p class="school-fields secondary">Fields :</p>
           <span

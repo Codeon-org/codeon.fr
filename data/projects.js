@@ -8,6 +8,15 @@ const projects = [
     wip: false,
   },
   {
+    title: "Minigram",
+    url: "https://github.com/MrAnyx/minigram",
+    description:
+      "A Chrome extension to remove useless parts of the Instagram UI",
+    image: "https://i.ibb.co/StsvyY8/promo-xl.png",
+    tags: ["Chrome", "Extension", "Vue"],
+    wip: false,
+  },
+  {
     title: "TimePHP",
     url: "https://github.com/TimePHP-org",
     description: "Lightweight Php MVC framework",

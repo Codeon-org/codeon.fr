@@ -2,7 +2,6 @@ const educations = [
   {
     school: "3iL Ingénieurs",
     fields: ["Computer Science", "Maths", "Management", "Network"],
-    city: "Limoges",
     country: "France",
     from: "September 2017",
     to: "July 2022",
@@ -27,7 +26,6 @@ const educations = [
       "Artificial Intelligence",
       "Machine Learning",
     ],
-    city: "Chicoutimi",
     country: "Québec",
     from: "September 2021",
     to: "December 2021",
@@ -35,7 +33,6 @@ const educations = [
   {
     school: "Integrated Preparatory Class (3iL)",
     fields: ["Computer Science", "Maths", "Management"],
-    city: "Limoges",
     country: "France",
     from: "September 2017",
     to: "May 2019",
@@ -43,7 +40,6 @@ const educations = [
   {
     school: "Lycée Saint Pierre Saint Paul",
     fields: ["General", "Science"],
-    city: "Dreux",
     country: "France",
     from: "September 2014",
     to: "July 2017",
