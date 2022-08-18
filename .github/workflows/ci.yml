@@ -4,12 +4,10 @@ on:
   push:
     branches:
       - master
-      - dev
 
   pull_request:
     branches:
       - master
-      - dev
 
 jobs:
   ci:
@@ -37,9 +35,9 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
 
-      - name: Install dependencies 👨🏻‍💻
-        run: npm ci --prefer-offline --no-audit
+      - name: Install dependencies
+        run: yarn
 
       - name: Run linter 👀
-        run: npm run lint
+        run: yarn run lint
 
