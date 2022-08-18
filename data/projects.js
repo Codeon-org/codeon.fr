@@ -17,6 +17,16 @@ const projects = [
     wip: false,
   },
   {
+    title: "Lithium newsletter",
+    url: "https://needlify.com/newsletter/registration",
+    description:
+      "Lithium Newsletter is a weekly newsletter based on the TLDR monthly post on Needlify",
+    image:
+      "https://i.ibb.co/FzTdBrP/271992547-4824056484322373-7139243337459286696-n.jpg",
+    tags: ["Newsletter", "Tech", "Cyber"],
+    wip: false,
+  },
+  {
     title: "TimePHP",
     url: "https://github.com/TimePHP-org",
     description: "Lightweight Php MVC framework",
