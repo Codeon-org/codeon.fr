@@ -1,6 +1,7 @@
 {
   "name": "codeon.fr",
   "short_name": "codeon.fr",
+  "description": "🔥 You want to get to know me or work with me, then check my website",
   "icons": [
     {
       "src": "/_nuxt/icons/icon_64x64.f36022.png",
