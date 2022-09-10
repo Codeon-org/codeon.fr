@@ -6,7 +6,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "Robin from Codeon 👋 - Fullstack developer",
+    title: "Robin from Codeon 👋 - Software Engineer",
     htmlAttrs: {
       lang: "en",
     },
@@ -58,24 +58,24 @@ export default {
         hid: "description",
         name: "description",
         content:
-          "I'm a french fullstack developer and engineer student. Well, I'm also a UI designer in my spare time",
+          "I'm a french software engineer specialized in fullstack web developer. Well, I'm also a UI designer in my spare time",
       },
       {
         hid: "og:description",
         property: "og:description",
         content:
-          "I'm a french fullstack developer and engineer student. Well, I'm also a UI designer in my spare time",
+          "I'm a french software engineer specialized in fullstack web developer. Well, I'm also a UI designer in my spare time",
       },
       {
         hid: "og:title",
         property: "og:title",
-        content: "Robin from Codeon 👋 - Fullstack developer",
+        content: "Robin from Codeon 👋 - Software Engineer",
       },
 
       {
         hid: "twitter:title",
         property: "twitter:title",
-        content: "Robin from Codeon 👋 - Fullstack developer",
+        content: "Robin from Codeon 👋 - Software Engineer",
       },
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],

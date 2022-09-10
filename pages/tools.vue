@@ -3,7 +3,7 @@
     <h1 class="page-title">Tools</h1>
     <p class="secondary page-description">
       Here is a quick list of tools and softwares use for my day-to-day work as
-      a web developer and an engineer student.
+      a software engineer.
     </p>
 
     <div v-for="(tool, index) in tools" :key="tool.header">
@@ -41,13 +41,13 @@ export default {
         hid: "description",
         name: "description",
         content:
-          "Discover the tools and software that I use on a daily basis as a web developer and an engineering student",
+          "Discover the tools and software that I use on a daily basis as a software engineer",
       },
       {
         hid: "og:description",
         property: "og:description",
         content:
-          "Discover the tools and software that I use on a daily basis as a web developer and an engineering student",
+          "Discover the tools and software that I use on a daily basis as a software engineer",
       },
       {
         hid: "og:title",

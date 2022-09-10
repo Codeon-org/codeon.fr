@@ -1,5 +1,17 @@
 const experience = [
   {
+    title: "Fullstack web developer",
+    company: "Icohup",
+    technologies: ["PHP", "Symfony", "Javascript", "VueJS"],
+    from: "September 2022",
+    to: "Today",
+    actions: [
+      "Creation of an optimized data filtering algorithm",
+      "Creation and proposal of new interface design",
+      "Bug fixes and implementation of new features to the existing web platform",
+    ],
+  },
+  {
     title: "Auto entrepreneur - Freelance",
     company: "Codeon",
     technologies: ["Symfony", "VueJS", "PHP", "SQL"],
@@ -12,9 +24,9 @@ const experience = [
   {
     title: "Apprenticeship as a fullstack web developer",
     company: "Icohup",
-    technologies: ["PHP", "Symfony", "Javascript", "VueJS", "Adobe XD"],
+    technologies: ["PHP", "Symfony", "Typescript", "VueJS", "Adobe XD"],
     from: "September 2019",
-    to: "Today",
+    to: "September 2022",
     actions: [
       "Creation of GraphQL APIs using multiple languages (PHP, Javascript)",
       "Research and comparison of several database management systems",

@@ -5,7 +5,8 @@
       As you may have seen, I'm Robin (aka MrAnyx) and I'm a
       <b class="accent-text">tech and open-source enthusiast</b>. Since 2019,
       I'm specialized in <b class="accent-text">fullstack web development</b>. I
-      am currently a work-study french engineering student in a company called
+      am currently a french <b class="accent-text">software engineer</b> in a
+      company called
       <b class="accent-text">Icohup</b>
       which creates connected radioactivity sensors. Besides that, I created my
       micro business called <b class="accent-text">Codeon</b> in which I create

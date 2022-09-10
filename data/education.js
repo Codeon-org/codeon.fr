@@ -4,13 +4,13 @@ const educations = [
     fields: ["Computer Science", "Maths", "Management", "Network"],
     country: "France",
     from: "September 2017",
-    to: "July 2022",
+    to: "September 2022",
     diplomas: [
-      // {
-      //   date: "September 2022",
-      //   name: "Engineering Degree",
-      //   info: "with high honors",
-      // },
+      {
+        date: "September 2022",
+        name: "Engineering Degree",
+        info: "with high honors",
+      },
       {
         date: "June 2021",
         name: "TOEIC",

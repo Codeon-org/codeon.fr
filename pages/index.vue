@@ -5,8 +5,10 @@
     </div>
     <h1>Hey, I'm Robin 👋</h1>
     <p class="first">
-      <b>I'm a french fullstack developer and engineer student</b>. Well, I'm
-      also a UI designer in my spare time. I'm currently working at
+      <b class="accent-text"
+        >I'm a french software engineer specialized in fullstack web
+        developer</b
+      >. Well, I'm also a UI designer in my spare time. I'm currently working at
       <a href="https://icohup.com/" target="_blank" class="accent">Icohup</a>, a
       french startup based in Limoges and I'm also an independent with my
       micro-company called <span class="accent">Codeon</span>.
@@ -17,30 +19,30 @@
 <script>
 export default {
   head: {
-    title: "Robin from Codeon 👋 - Fullstack developer",
+    title: "Robin from Codeon 👋 - Software Engineer",
     meta: [
       {
         hid: "description",
         name: "description",
         content:
-          "I'm a french fullstack developer and engineer student. Well, I'm also a UI designer in my spare time",
+          "I'm a french software engineer specialized in fullstack web developer. Well, I'm also a UI designer in my spare time",
       },
       {
         hid: "og:description",
         property: "og:description",
         content:
-          "I'm a french fullstack developer and engineer student. Well, I'm also a UI designer in my spare time",
+          "I'm a french software engineer specialized in fullstack web developer. Well, I'm also a UI designer in my spare time",
       },
       {
         hid: "og:title",
         property: "og:title",
-        content: "Robin from Codeon 👋 - Fullstack developer",
+        content: "Robin from Codeon 👋 - Software Engineer",
       },
 
       {
         hid: "twitter:title",
         property: "twitter:title",
-        content: "Robin from Codeon 👋 - Fullstack developer",
+        content: "Robin from Codeon 👋 - Software Engineer",
       },
     ],
   },
