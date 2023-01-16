@@ -10,7 +10,7 @@
       </a>
 
       <a
-        href="https://www.linkedin.com/in/robin-bidanchon-62020119a/"
+        href="https://www.linkedin.com/in/rob-bch/"
         target="_blank"
         ><eva-icon name="linkedin-outline" class="icon"></eva-icon>
       </a>
