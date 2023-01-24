@@ -9,9 +9,7 @@
         ><eva-icon name="twitter-outline" class="icon"></eva-icon>
       </a>
 
-      <a
-        href="https://www.linkedin.com/in/rob-bch/"
-        target="_blank"
+      <a href="https://www.linkedin.com/in/rob-bch/" target="_blank"
         ><eva-icon name="linkedin-outline" class="icon"></eva-icon>
       </a>
 
@@ -25,11 +23,12 @@
     </div>
 
     <div id="footer-credits">
-      Made with <a href="https://nuxtjs.org/" class="accent">NuxtJS</a>
+      {{ $t("footer.credits.madeWith") }}
+      <a href="https://nuxtjs.org/" class="accent">Nuxt</a>
 
       <br />
 
-      Licensed under
+      {{ $t("footer.credits.license") }}
 
       <a
         href="https://github.com/Codeon-org/codeon.fr/blob/master/LICENSE"
@@ -45,14 +44,10 @@
 
 <script>
 export default {
-  data() {
-    return {
-      year: 2021,
-    };
-  },
-
-  mounted() {
-    this.year = new Date().getFullYear();
+  computed: {
+    year() {
+      return new Date().getFullYear();
+    },
   },
 };
 </script>

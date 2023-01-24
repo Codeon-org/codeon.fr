@@ -2,7 +2,7 @@ const experience = [
   {
     title: "Fullstack web developer",
     company: "Icohup",
-    technologies: ["PHP", "Symfony", "Javascript", "VueJS"],
+    technologies: ["Typescript", "Vue.js", "PHP", "Symfony"],
     from: "September 2022",
     to: "Today",
     actions: [
@@ -11,38 +11,38 @@ const experience = [
       "Bug fixes and implementation of new features to the existing web platform",
     ],
   },
-  {
-    title: "Auto entrepreneur - Freelance",
-    company: "Codeon",
-    technologies: ["Symfony", "VueJS", "PHP", "SQL"],
-    from: "April 2021",
-    to: "Today",
-    actions: [
-      "Creation of UI interfaces and websites based on customer requests",
-    ],
-  },
+  // {
+  //   title: "Auto entrepreneur - Freelance",
+  //   company: "Codeon",
+  //   technologies: ["Symfony", "Vue.js", "PHP", "SQL"],
+  //   from: "April 2021",
+  //   to: "Today",
+  //   actions: [
+  //     "Creation of UI interfaces and websites based on customer requests",
+  //   ],
+  // },
   {
     title: "Apprenticeship as a fullstack web developer",
     company: "Icohup",
-    technologies: ["PHP", "Symfony", "Typescript", "VueJS", "Adobe XD"],
+    technologies: ["PHP", "Symfony", "Typescript", "Vue.js", "Adobe XD"],
     from: "September 2019",
     to: "September 2022",
     actions: [
       "Creation of GraphQL APIs using multiple languages (PHP, Javascript)",
       "Research and comparison of several database management systems",
       "Research and creation of N-tier architecture prototype",
-      "Research and creation of a same prototype using several frontend frameworks (VueJS, React, Svelte, Preact, Angular) in order to determine the most efficient",
+      "Research and creation of a same prototype using several frontend frameworks (Vue.js, React, Svelte, Preact, Angular) in order to determine the most efficient",
       "Introduction to AGILE methods (planning, realization, CI / CD, ...)",
       "Creation of an optimized data filtering algorithm",
       "Creation and proposal of new interface design",
-      "Research and creation of a project prototype with VueJS and ViteJS",
+      "Research and creation of a project prototype with Vue.js and ViteJS",
       "Bug fixes and implementation of new features to the existing web platform",
     ],
   },
   {
     title: "Internship in web development",
     company: "Icohup",
-    technologies: ["PHP", "Python", "Javascript", "Flask", "Symfony"],
+    technologies: ["PHP", "Python", "Javascript", "Go"],
     from: "July 2019",
     to: "",
     actions: [
@@ -55,15 +55,7 @@ const experience = [
   {
     title: "Internship in web and network development",
     company: "Mantes la jolie town hall",
-    technologies: [
-      "PHP",
-      "Laravel",
-      "SQL",
-      "GitLab",
-      "HTML",
-      "CSS",
-      "Homestead",
-    ],
+    technologies: ["PHP", "Laravel", "Homestead", "GitLab"],
     from: "May 2019",
     to: "June 2019",
     actions: [

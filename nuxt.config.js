@@ -1,3 +1,6 @@
+import fr from "./i18n/fr";
+import en from "./i18n/en";
+
 export default {
   target: "static",
 
@@ -111,6 +114,7 @@ export default {
     "@nuxtjs/pwa",
     "@nuxtjs/axios",
     "@nuxt/http",
+    "@nuxtjs/i18n",
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
@@ -120,4 +124,21 @@ export default {
 
   // PWA : https://pwa.nuxtjs.org/setup
   pwa: {},
+
+  // I18n : https://i18n.nuxtjs.org/setup
+  i18n: {
+    locales: ["en", "fr"],
+    defaultLocale: "fr",
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: "locale",
+    },
+    vueI18n: {
+      fallbackLocale: "fr",
+      messages: {
+        en,
+        fr,
+      },
+    },
+  },
 };

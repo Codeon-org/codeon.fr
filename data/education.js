@@ -1,7 +1,7 @@
 const educations = [
   {
     school: "3iL Ingénieurs",
-    fields: ["Computer Science", "Maths", "Management", "Network"],
+    fields: ["Programming", "Network", "Databases", "Management"],
     country: "France",
     from: "September 2017",
     to: "September 2022",
@@ -20,19 +20,14 @@ const educations = [
   },
   {
     school: "Université du Québec à Chicoutimi (UQAC)",
-    fields: [
-      "Computer Science",
-      "Maths",
-      "Artificial Intelligence",
-      "Machine Learning",
-    ],
+    fields: ["Artificial Intelligence", "Cybersecurity", "Algorithmic"],
     country: "Québec",
     from: "September 2021",
     to: "December 2021",
   },
   {
     school: "Integrated Preparatory Class (3iL)",
-    fields: ["Computer Science", "Maths", "Management"],
+    fields: ["Maths", "Network", "Programming", "Databases"],
     country: "France",
     from: "September 2017",
     to: "May 2019",

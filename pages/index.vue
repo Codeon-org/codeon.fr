@@ -3,15 +3,12 @@
     <div id="image-container">
       <img src="~/assets/bitmoji2.png" alt="Face bitmoji" />
     </div>
-    <h1>Hey, I'm Robin 👋</h1>
+    <h1>{{ $t("pages.index.title") }}</h1>
     <p class="first">
-      <b class="accent-text"
-        >I'm a french software engineer specialized in fullstack web
-        developer</b
-      >. Well, I'm also a UI designer in my spare time. I'm currently working at
-      <a href="https://icohup.com/" target="_blank" class="accent">Icohup</a>, a
-      french startup based in Limoges and I'm also an independent with my
-      micro-company called <span class="accent">Codeon</span>.
+      <b class="accent-text">{{ $t("pages.index.content1") }}</b
+      >. {{ $t("pages.index.content2") }} {{ $t("pages.index.content3") }}
+      <a href="https://icohup.com/" target="_blank" class="accent">Icohup</a>,
+      {{ $t("pages.index.content4") }}
     </p>
   </div>
 </template>

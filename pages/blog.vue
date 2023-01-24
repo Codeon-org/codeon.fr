@@ -1,12 +1,11 @@
 <template>
   <div>
-    <h1 class="page-title">Blog</h1>
+    <h1 class="page-title">{{ $t("header.links.blog") }}</h1>
 
     <p class="secondary page-description">
-      Since May 2021, I regularly write posts on a community platform that I've
-      created called Needlify. Everyone of them are accessible on my
-      <a href="https://needlify.com/me/MrAnyx" class="accent">Needlify</a>
-      profile. Anyway, here is a list of my previous posts. Hope you like it 👍.
+      {{ $t("pages.blog.description1") }}
+      <a href="https://needlify.com/me/MrAnyx" class="accent">Needlify</a>.
+      {{ $t("pages.blog.description2") }}
     </p>
 
     <div id="posts-wrapper" class="">

@@ -1,12 +1,10 @@
 <template>
   <div>
-    <h1 class="page-title">Projects</h1>
+    <h1 class="page-title">{{ $t("header.links.projects") }}</h1>
     <p class="secondary page-description">
-      Since 2017 when I became an engineer student, I've worked on a lot of
-      various projects. Some of them are just little school projects but others
-      are bigger projects I'm very proud of. All of them are available on my
-      <a href="https://github.com/MrAnyx" class="accent">Github</a>. Anyway,
-      here is a small list of my main projects.
+      {{ $t("pages.projects.description1") }}
+      <a href="https://github.com/MrAnyx" class="accent">Github</a>.
+      {{ $t("pages.projects.description2") }}
     </p>
 
     <div id="macy-container">
@@ -28,7 +26,7 @@
           <img :src="project.image" alt="project image" />
         </div>
         <h3>{{ project.title }}</h3>
-        <p class="secondary">{{ project.description }}</p>
+        <p class="secondary">{{ $t(project.description) }}</p>
         <div v-if="project.tags !== []" class="project-tags">
           <span
             v-for="(tag, idxTag) in project.tags"

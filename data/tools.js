@@ -1,485 +1,436 @@
 const tools = [
   {
-    header: "Code editors",
+    header: "pages.tools.editors",
     anchor: "code-editors",
     items: [
       {
         name: "Visual Studio Code",
         link: "https://code.visualstudio.com/",
-        description:
-          "It's very flexible and it has very good features for javascript projects.",
+        description: "pages.tools.vscode",
       },
       {
         name: "PHPStorm",
         link: "https://www.jetbrains.com/phpstorm/",
-        description:
-          "It's more convenient for PHP. The autocompletion, code scanning, ...",
-      },
-      {
-        name: "Lite XL",
-        link: "https://lite-xl.github.io/",
-        description: "To quickly edit a file.",
+        description: "pages.tools.phpstorm",
       },
     ],
   },
   {
-    header: "Fonts",
+    header: "pages.tools.fonts",
     anchor: "fonts",
     items: [
       {
         name: "Cascadia Code",
         link: "https://github.com/microsoft/cascadia-code",
-        description:
-          "Ligature and cursive style 😍. This is a greate alternative to Operator Mono.",
+        description: "pages.tools.cascadiaCode",
       },
       {
         name: "JetBrains Mono",
         link: "https://www.jetbrains.com/lp/mono/",
-        description: "When I get tired of using Cascadia Code.",
+        description: "pages.tools.jetbrainsMono",
       },
       {
         name: "Fira Code",
         link: "https://github.com/tonsky/FiraCode",
-        description: "When I get tired of using JetBrains Mono.",
+        description: "pages.tools.firaCode",
       },
     ],
   },
   {
-    header: "Inspirations",
+    header: "pages.tools.inspirations",
     anchor: "inspirations",
     items: [
       {
         name: "Dribbble",
         link: "https://dribbble.com/",
-        description: "Best website to get inspired.",
+        description: "pages.tools.dribbble",
       },
       {
         name: "Pinterest",
         link: "https://www.pinterest.com/",
-        description: "Infinite source of inspiration.",
+        description: "pages.tools.pinterest",
       },
       {
         name: "Screenlane",
         link: "https://screenlane.com/",
-        description: "Another way to get inspired.",
+        description: "pages.tools.screenlane",
       },
       {
         name: "Flowrift",
         link: "https://flowrift.com/",
-        description: "A collection a beautiful UI components.",
+        description: "pages.tools.flowrift",
       },
     ],
   },
   {
-    header: "Productivity softwares",
+    header: "pages.tools.productivity",
     anchor: "productivity-softwares",
     items: [
       {
         name: "Notion",
         link: "https://www.notion.so/",
-        description:
-          "Simply the best tool to organize projects, ideas, meetings, ...",
+        description: "pages.tools.notion",
       },
       {
         name: "Standard Notes",
         link: "https://standardnotes.com/",
-        description: "A secure note taking app.",
+        description: "pages.tools.standardNote",
       },
       {
         name: "Pomotroid",
         link: "https://splode.github.io/pomotroid/",
-        description: "Small but very efficient pomodoro timer.",
+        description: "pages.tools.pomotroid",
       },
       {
         name: "Todoist",
         link: "https://todoist.com/",
-        description: "Helpful to schedule my time.",
+        description: "pages.tools.todoist",
       },
       {
         name: "Astral",
         link: "https://astralapp.com/",
-        description: "Web application to manage github stars.",
-      },
-      {
-        name: "Codespace",
-        link: "https://codespace.app/",
-        description: "Never forget a code snippet.",
+        description: "pages.tools.astral",
       },
       {
         name: "Office 365",
         link: "https://www.office.com/",
-        description: "Obviously 😄",
+        description: "pages.tools.office365",
       },
       {
         name: "Carbon",
         link: "https://carbon.now.sh/",
-        description: "Share pieces of code with syntax highlighting.",
+        description: "pages.tools.carbon",
       },
     ],
   },
   {
-    header: "Messenging",
+    header: "pages.tools.messenging",
     anchor: "messenging",
     items: [
       {
         name: "Discord",
         link: "https://discord.com/",
-        description: "Organize conversations, communities, servers, ...",
+        description: "pages.tools.discord",
       },
       {
-        name: "Thunderbird",
-        link: "https://www.thunderbird.net/fr/",
-        description: "Customizable email client.",
+        name: "Mailspring",
+        link: "https://getmailspring.com/",
+        description: "pages.tools.mailspring",
       },
       {
         name: "Signal",
         link: "https://signal.org/",
-        description: "Messenging app focused on privacy.",
+        description: "pages.tools.signal",
       },
     ],
   },
   {
-    header: "Blogs",
+    header: "pages.tools.blogs",
     anchor: "blogs",
     items: [
       {
         name: "Needlify",
         link: "https://needlify.com/",
-        description:
-          "Well, this is probably the best platform to learn and share knowledges about new technologies",
+        description: "pages.tools.needlify",
       },
       {
         name: "Devto",
         link: "https://dev.to/",
-        description:
-          "Community platform where people share ideas and tutorials.",
+        description: "pages.tools.devto",
       },
       {
         name: "Medium",
         link: "https://medium.com/",
-        description:
-          "Wonderful place where people share thoughts not only around technologies.",
+        description: "pages.tools.medium",
       },
       {
         name: "Scotch",
         link: "https://scotch.io/",
-        description: "Great place to find tutorials about web technologies.",
+        description: "pages.tools.scotch",
       },
       {
         name: "Github Blog",
         link: "https://github.blog/",
-        description: "Ideas to help developers build better softwares",
+        description: "pages.tools.githubBlog",
       },
     ],
   },
   {
-    header: "Images / Icons",
+    header: "pages.tools.images",
     anchor: "images-icons",
     items: [
       {
         name: "Unsplash",
         link: "https://unsplash.com/",
-        description: "Thousands of free to use pictures.",
+        description: "pages.tools.unsplash",
       },
       {
         name: "Undraw",
         link: "https://undraw.co/",
-        description: "An open-source illustration bank.",
+        description: "pages.tools.undraw",
       },
       {
         name: "SimpleIcons",
         link: "https://simpleicons.org/",
-        description: "Almost every brand logo are in SimpleIcons",
+        description: "pages.tools.simpleIcons",
       },
     ],
   },
   {
-    header: "Design",
+    header: "pages.tools.design",
     anchor: "design",
     items: [
       {
         name: "Figma",
         link: "https://www.figma.com/",
-        description: "Excellent for creation and prototyping.",
+        description: "pages.tools.figma",
       },
       {
         name: "Color Hunt",
         link: "https://colorhunt.co/",
-        description: "Simple website that generated color palettes.",
+        description: "pages.tools.colorHunt",
       },
     ],
   },
   {
-    header: "Terminals",
+    header: "pages.tools.terminals",
     anchor: "terminals",
     items: [
       {
         name: "Windows Terminal",
         link: "https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701",
-        description: "CMD on steroids 💪",
+        description: "pages.tools.terminal",
       },
       {
         name: "Git Bash",
         link: "https://git-scm.com/",
-        description: "Simple terminal with linux commands support.",
+        description: "pages.tools.gitBash",
       },
       {
-        name: "Ubuntu 20.04",
-        link: "https://www.microsoft.com/en-ca/p/ubuntu-2004-lts/9n6svws3rx71",
-        description: "Real Linux kernel on Windows.",
+        name: "Ubuntu 22.04",
+        link: "https://apps.microsoft.com/store/detail/ubuntu-22041-lts/9PN20MSR04DW",
+        description: "pages.tools.ubuntu",
       },
     ],
   },
   {
-    header: "Other development tools",
+    header: "pages.tools.devtools",
     anchor: "other-development-tools",
     items: [
       {
         name: "Windows Subsystem for Linux (WSL 2)",
         link: "https://docs.microsoft.com/en-us/windows/wsl/install",
-        description:
-          "Allow you to use windows and linux at the same time. Best of both worlds.",
+        description: "pages.tools.wsl",
       },
       {
         name: "Docker",
         link: "https://www.docker.com/",
-        description: "Accelerate the way to build apps.",
-      },
-      {
-        name: "TablePlus",
-        link: "https://www.tableplus.io/",
-        description: "Desktop app to manage databases.",
+        description: "pages.tools.docker",
       },
       {
         name: "Filezilla",
         link: "https://filezilla-project.org/",
-        description: "Upload and download files using FTP and sFTP.",
+        description: "pages.tools.filezilla",
       },
       {
-        name: "Insomnia",
-        link: "https://insomnia.rest/",
-        description: "Execute and test REST API endpoints.",
+        name: "Postman",
+        link: "https://www.postman.com/",
+        description: "pages.tools.postman",
       },
       {
         name: "Github",
         link: "https://github.com/MrAnyx",
-        description: "Who doesn't use Github ?",
+        description: "pages.tools.github",
       },
       {
         name: "Github Codespace",
         link: "https://github.com/features/codespaces",
-        description: "This allows me to code wherever i want.",
-      },
-      {
-        name: "Mailtrap",
-        link: "https://mailtrap.io/",
-        description: "Flexible mail API.",
+        description: "pages.tools.githubCodespace",
       },
       {
         name: "Composer",
         link: "https://getcomposer.org/",
-        description: "PHP package manager.",
-      },
-      {
-        name: "PNPM",
-        link: "https://pnpm.io/",
-        description: "Node package manager.",
+        description: "pages.tools.composer",
       },
       {
         name: "Regex 101",
         link: "https://regex101.com/",
-        description: "Build and (hopefully) understand regex.",
+        description: "pages.tools.regex101",
       },
     ],
   },
   {
-    header: "Other softwares",
+    header: "pages.tools.other",
     anchor: "other-softwares",
     items: [
       {
         name: "Brave",
         link: "https://brave.com/",
-        description: "Chrome with privary.",
+        description: "pages.tools.brave",
       },
       {
         name: "Spotify",
         link: "https://www.spotify.com/",
-        description: "Start VSCode, play your playlist and enjoy coding.",
+        description: "pages.tools.spotify",
       },
       {
         name: "PowerToys",
         link: "https://github.com/microsoft/PowerToys",
-        description: "Utilitary tools to enjoy using windows everyday.",
+        description: "pages.tools.powertoys",
       },
     ],
   },
   {
-    header: "Chrome extensions",
+    header: "pages.tools.chrome",
     anchor: "chrome-extensions",
     items: [
       {
-        name: "Fonts Ninja",
-        link: "https://chrome.google.com/webstore/detail/fonts-ninja/eljapbgkmlngdpckoiiibecpemleclhh",
-        description: "Discover which fonts are used on a website.",
-      },
-      {
         name: "Vue DevTool",
         link: "https://chrome.google.com/webstore/detail/vuejs-devtools/ljjemllljcmogpfapbkkighbhhppjdbg",
-        description: "Understand and debug vue behaviour.",
+        description: "pages.tools.vueDevtool",
       },
       {
         name: "Json Formatter",
         link: "https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa",
-        description: "Give json pages a better look.",
+        description: "pages.tools.jsonFormatter",
+      },
+      {
+        name: "Dark Reader",
+        link: "https://chrome.google.com/webstore/detail/dark-reader/eimadpbcbfnmbkopoojfekhnkhdbieeh",
+        description: "pages.tools.darkReader",
       },
     ],
   },
   {
-    header: "VSCode extensions",
+    header: "pages.tools.extensions",
     anchor: "vscode-extensions",
     items: [
       {
-        name: "Github Dark",
-        link: "https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme",
-        description: "Great theme for developers.",
+        name: "Moonlight",
+        link: "https://marketplace.visualstudio.com/items?itemName=atomiks.moonlight",
+        description: "pages.tools.moonlight",
       },
       {
-        name: "Github Codespaces",
-        link: "https://marketplace.visualstudio.com/items?itemName=GitHub.codespaces",
-        description: "To be able to connect vscode to a remode codespace.",
+        name: "PHP Intelephense",
+        link: "https://marketplace.visualstudio.com/items?itemName=bmewburn.vscode-intelephense-client",
+        description: "pages.tools.phpIntelephense",
       },
       {
         name: "Material Icons Theme",
         link: "https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme",
-        description: "Classic but still effective.",
-      },
-      {
-        name: "Gitmoji",
-        link: "https://marketplace.visualstudio.com/items?itemName=Vtrois.gitmoji-vscode",
-        description: "I finally use Gitmoji commit messages 📝",
+        description: "pages.tools.materialIcons",
       },
       {
         name: "Fluent Icons",
         link: "https://marketplace.visualstudio.com/items?itemName=miguelsolorio.fluent-icons",
-        description: "To improve the overall look of VSCode.",
+        description: "pages.tools.fluentIcon",
       },
       {
         name: "TODO Highlight",
         link: "https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight",
-        description: "Get organized even when you code.",
-      },
-      {
-        name: "Todo Tree",
-        link: "https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree",
-        description: "Simple extension that lists every TODO comment.",
+        description: "pages.tools.todoHighlight",
       },
       {
         name: "ESLint",
         link: "https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint",
-        description: "Code formatting",
+        description: "pages.tools.eslint",
       },
       {
         name: "Prettier",
         link: "https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode",
-        description: "Code formatting (bis)",
+        description: "pages.tools.prettier",
       },
       {
         name: "GitLens",
         link: "https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens",
-        description: "Achieve complex git tasks.",
+        description: "pages.tools.gitlens",
       },
       {
         name: "Polacode",
         link: "https://marketplace.visualstudio.com/items?itemName=pnp.polacode",
-        description: "Create code snippet and save it as an image.",
+        description: "pages.tools.polacode",
       },
       {
-        name: "Remote WSL",
-        link: "https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl",
-        description: "Develop a project on WSL using VSCode.",
+        name: "Remote Development",
+        link: "https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack",
+        description: "pages.tools.remoteDevelopment",
+      },
+      {
+        name: "Github Codespaces",
+        link: "https://marketplace.visualstudio.com/items?itemName=GitHub.codespaces",
+        description: "pages.tools.githubCodespace2",
       },
       {
         name: "Docker",
         link: "https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker",
-        description: "Create a complete development environment.",
+        description: "pages.tools.docker2",
       },
       {
-        name: "Vetur",
-        link: "https://marketplace.visualstudio.com/items?itemName=octref.vetur",
-        description: "Make the VueJS development way easier.",
-      },
-      {
-        name: "WikiLens",
-        link: "https://marketplace.visualstudio.com/items?itemName=lostintangent.wikilens",
-        description: "Document your code using Wiki or markdown pages.",
+        name: "Volar",
+        link: "https://marketplace.visualstudio.com/items?itemName=Vue.volar",
+        description: "pages.tools.volar",
       },
     ],
   },
   {
-    header: "Programming languages",
+    header: "pages.tools.languages",
     anchor: "programming-languages",
     items: [
       {
         name: "PHP",
         link: "https://www.php.net/",
-        description: "Why not 😄",
-      },
-      {
-        name: "Javascript",
-        link: "https://www.javascript.com/",
-        description: "Dynamize websites",
+        description: "pages.tools.php",
       },
       {
         name: "Typescript",
         link: "https://www.typescriptlang.org/",
-        description: "Javascript with types.",
+        description: "pages.tools.typescript",
       },
       {
         name: "Python",
         link: "https://www.python.org/",
-        description: "Simple and flexible.",
+        description: "pages.tools.python",
       },
     ],
   },
   {
-    header: "Frameworks",
+    header: "pages.tools.frameworks",
     anchor: "frameworks",
     items: [
       {
         name: "Symfony",
         link: "https://symfony.com/",
-        description: "To create websites with a strong PHP backend.",
+        description: "pages.tools.symfony",
       },
       {
-        name: "VueJS",
+        name: "Vue.js",
         link: "https://vuejs.org/",
-        description: "I used to use React, and then, I discovered VueJS 💗",
+        description: "pages.tools.vuejs",
       },
       {
         name: "ViteJS",
         link: "https://vitejs.dev/",
-        description: "Speed up the development process.",
+        description: "pages.tools.vitejs",
       },
       {
         name: "Bootstrap",
         link: "https://getbootstrap.com/",
-        description: "Good for prototyping.",
+        description: "pages.tools.bootstrap",
       },
       {
         name: "Laravel",
         link: "https://laravel.com/",
-        description: "A very pleasant backend framework.",
+        description: "pages.tools.laravel",
       },
       {
         name: "Electron",
         link: "https://www.electronjs.org/",
-        description: "Convert websites into desktop apps.",
+        description: "pages.tools.electron",
       },
       {
-        name: "NuxtJS",
+        name: "Nuxt",
         link: "https://nuxtjs.org/",
-        description:
-          "Quickly create VueJS web apps without spending time to configure everythings.",
+        description: "pages.tools.nuxt",
       },
     ],
   },

@@ -57,7 +57,7 @@
 
     <p>
       For quite some time now, I've really enjoyed discovering new technologies
-      like: Electron, NuxtJS, VueJS or even new programming languages like Pony
+      like: Electron, Nuxt, Vue.js or even new programming languages like Pony
       or Vlang and trying to create projects with that. Believe me, I have no
       shortage of ideas. I have an endless list of project ideas, sometimes
       totally implausible, that I try to achieve as soon as I have the ability

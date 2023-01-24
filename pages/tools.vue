@@ -1,14 +1,13 @@
 <template>
   <div>
-    <h1 class="page-title">Tools</h1>
+    <h1 class="page-title">{{ $t("header.links.tools") }}</h1>
     <p class="secondary page-description">
-      Here is a quick list of tools and softwares use for my day-to-day work as
-      a software engineer.
+      {{ $t("pages.tools.description") }}
     </p>
 
     <div v-for="(tool, index) in tools" :key="tool.header">
       <h2 :id="tool.anchor" :class="{ 'first-header': index === 0 }">
-        <a :href="`#${tool.anchor}`">{{ tool.header }}</a>
+        <a :href="`#${tool.anchor}`">{{ $t(tool.header) }}</a>
       </h2>
 
       <ul>
@@ -17,7 +16,7 @@
             item.name
           }}</a>
           <span v-show="item.description !== ''" class="secondary">
-            : {{ item.description }}
+            : {{ $t(item.description) }}
           </span>
         </li>
       </ul>
