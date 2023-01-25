@@ -65,7 +65,7 @@ export default {
       apod: "Une fois de plus, il s'agit d'un robot Twitter qui publie chaque jour la photo du jour de l'API de la Nasa.",
       iss: "Un bot Twitter qui affiche la position de l'ISS toutes les heures.",
       vykon:
-        "Projet final de 12ème année. Il s'agit d'un Power 4 avec une \"IA\" écrite en Python..",
+        "Projet final de terminale. Il s'agit d'un Puissance 4 avec une \"IA\" écrite en Python..",
       gameOfLife:
         "Mise en œuvre simple du jeu de la vie à l'aide de Processing.",
       langton: "L'implémentation de la foumis de Langton écrite en Processing.",
@@ -189,6 +189,30 @@ export default {
       laravel: "Un framework backend très agréable.",
       electron: "Convertir des sites web en applications de bureau.",
       nuxt: "Créez rapidement des applications Web Vue.js sans perdre de temps à tout configurer.",
+    },
+    about: {
+      text1:
+        // Besides that, I created my micro business called <b class="accent-text">Codeon</b> in which I create websites or web application for individuals or startups.
+        'Comme vous l\'avez peut-être vu, je m\'appelle Robin (alias MrAnyx) et je suis un <b class="accent-text">passionné de technologie et de logiciels libres</b>. Depuis 2019, je suis spécialisé en <b class="accent-text">développement web fullstack</b>. Je suis actuellement <b class="accent-text">ingénieur informatique</b> français dans une entreprise appelée <b class="accent-text">Icohup</b> qui crée des capteurs de radioactivité connectés. Une chose que j\'aime énormement, c\'est de créer des applications et des projets et de les partager sur internet pour que les gens puissent donner leur avis.',
+      text2:
+        'J\'ai fait mes premières armes dans le développement web lorsque j\'étais en 9ème année.  Avec un ami, nous avons essayé de créer notre tout premier site web en utilisant HTML et CSS grâce aux explications et aux tutoriels que nous pouvions trouver sur "le site du zéro" (maintenant connu sous le nom de <a href="https://openclassrooms.com/" target="_blank" class="accent">OpenClassrooms</a>). J\'ai passé beaucoup de temps à essayer de créer une barre de navigation ou un paragraphe et à aligner le tout dans une page HTML. C\'était amusant 😄',
+      text3:
+        "J'ai commencé la programmation et le développement avec Python (très original 😄) mais c'est en découvrant les technologies web que j'ai vraiment commencé à m'investir dans cet environnement. J'ai commencé par les bases avec HTML, CSS et Javascript, puis j'ai continué avec les frameworks CSS comme bootstrap. Assez rapidement, je me suis intéressé aux frameworks backend comme Symfony ou Laravel ou même aux frameworks Javascript comme React ou Electron. J'étais fasciné par ces technologies.",
+      text4:
+        'Avec toutes les connaissances que j\'ai pu accumuler au cours de toutes ces années, j\'ai commencé à créer de petits projets comme le jeu de la vie ou la fourmi de Langton, tous deux disponibles dans la <nuxt-link to="projects" class="accent">page des projets</nuxt-link>. Puis, plus j\'évoluais, plus mes ambitions augmentaient et mes projets grandissaient. De fil en aiguille, j\'ai rassemblé suffisamment de connaissances pour créer mon plus grand projet à ce jour : <a href="https://needlify.com" class="accent" target="_blank">Needlify</a>, une plateforme sur laquelle<b class="accent-text">les gens peuvent partager et apprendre des choses autour des nouvelles technologies</b>. J\'ai passé presque un an à créer ce projet. En réalité, j\'ai dû recommencer depuis le début car les bases que j\'avais créées ne correspondaient pas à ce que je voulais réaliser. J\'ai ensuite su saisir les opportunités qui m\'étaient données et optimiser mon temps pour me concentrer sur ce projet. En 5 mois, les projets de développement étaient terminés et le site était en production.',
+      text5:
+        "Depuis un certain temps maintenant, j'aime vraiment découvrir de nouvelles technologies comme : Electron, Nuxt, Vue.js ou même de nouveaux langages de programmation comme Pony ou Vlang et essayer de créer des projets avec ça. Croyez-moi, je ne manque pas d'idées. J'ai une liste infinie d'idées de projets, parfois totalement invraisemblables, que j'essaie de réaliser dès que j'en ai la possibilité et l'envie.",
+      text6:
+        'Pour tout ce qui concerne la programmation ou les outils que j\'utilise, je vous conseille de jeter un œil à la page des<nuxt-link to="projects" class="accent">projets</nuxt-link> ou des <nuxt-link to="tools" class="accent">outils</nuxt-link> que j\'utilise. Si vous avez des questions concernant ces domaines, vous pouvez me contacter via les réseaux sociaux ou par <a href="mailto://robin@codeon.fr" class="accent">email</a>.',
+      text7:
+        'Enfin, pour garder une trace de ce que je réalise au cours de l\'année, j\'ai créé une <a href="https://codeon.notion.site/Roadmap-2021-2022-92830dd78ad5471b8b79303c74b110f8" target="_blank" class="accent">feuille de route du développement</a>. Ça me permet donc de savoir ce que je veux apprendre ou ce sur quoi j\'aimerais m\'améliorer. Vous pouvez vous en inspirer, si vous en avez envie.',
+      text8:
+        'Outre la programmation, j\'essaie d\'écrire régulièrement des articles afin de partager mes connaissances. Je suis également un amateur de musique, ce qui signifie que dès que je fais quelque chose, <b class="accent-text">je DOIS avoir de la musique dans mes oreilles</b>. Enfin, j\'essaie autant que possible de rester organisée, c\'est pourquoi j\'aime les outils d\'organisation et de planification tels que <a href="https://www.notion.so/" class="accent" target="_blank">Notion</a> ou <a href="https://todoist.com" target="_blank" class="accent">Todoist</a>. Cela me permet de planifier mes semaines et mes journées pour être plus productif.',
+      education: "Éducation",
+      subjects: "Sujets",
+      experience: "Expérience",
+      techs: "Technologies",
+      text9: "J'espère que vous avez apprécié d'en découvrir plus sur moi 👍",
     },
   },
   footer: {
