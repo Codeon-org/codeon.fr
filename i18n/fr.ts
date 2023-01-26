@@ -6,7 +6,6 @@ export default {
     },
     links: {
       home: "Accueil",
-      blog: "Articles",
       projects: "Projets",
       tools: "Outils",
       about: "À propos",
@@ -17,10 +16,6 @@ export default {
       title: "Hey, je m'appelle Robin 👋",
       description:
         '<b class="accent-text">Je suis un ingénieur informatique français spécialisé en développement web full-stack</b>. Je suis aussi designer d\'interface utilisateur à mes heures perdues. Jusqu\'en janvier, je travaillais pour <a href="https://icohup.com/" target="_blank" class="accent">Icohup</a>, une jeune entreprise française basée à Limoges.',
-    },
-    blog: {
-      description:
-        'Depuis mai 2021, je rédige régulièrement des articles sur une plateforme communautaire que j\'ai créée : <a href="https://needlify.com/me/MrAnyx" class="accent" target="_blank">Needlify</a>. Bref, voici la liste de mes précédents articles. J\'espère qu\'ils vous plairont 👍.',
     },
     projects: {
       description:

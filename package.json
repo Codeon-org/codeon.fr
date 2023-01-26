@@ -13,15 +13,12 @@
     "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
-    "@nuxt/http": "^0.6.4",
-    "@nuxtjs/axios": "^5.13.6",
     "@nuxtjs/i18n": "^7.3.1",
     "core-js": "^3.21.1",
     "macy": "^2.5.1",
     "nuxt": "^2.15.7",
     "vue-eva-icons": "^1.1.1",
-    "vue-simple-icons": "^4.7.0",
-    "vue-swal": "^1.0.0"
+    "vue-simple-icons": "^4.7.0"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.17.0",

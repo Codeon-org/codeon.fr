@@ -11,7 +11,7 @@ export default {
   head: {
     title: "Robin from Codeon 👋 - Software Engineer",
     htmlAttrs: {
-      lang: "en",
+      lang: "fr",
     },
     meta: [
       { charset: "utf-8" },
@@ -96,7 +96,7 @@ export default {
   css: ["@/assets/scss/reset.scss", "@/assets/scss/global.scss"],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [{ src: "@/plugins/eva-icons" }, { src: "@/plugins/swal" }],
+  plugins: [{ src: "@/plugins/eva-icons" }],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -109,17 +109,11 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [
-    "@nuxtjs/style-resources",
-    "@nuxtjs/pwa",
-    "@nuxtjs/axios",
-    "@nuxt/http",
-    "@nuxtjs/i18n",
-  ],
+  modules: ["@nuxtjs/style-resources", "@nuxtjs/pwa", "@nuxtjs/i18n"],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    vendor: ["vue-swal"],
+    vendor: [],
   },
 
   // PWA : https://pwa.nuxtjs.org/setup

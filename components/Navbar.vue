@@ -29,12 +29,6 @@ export default {
         },
 
         {
-          icon: "📚",
-          text: "header.links.blog",
-          link: "blog",
-        },
-
-        {
           icon: "💡",
           text: "header.links.projects",
           link: "projects",

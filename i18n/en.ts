@@ -6,7 +6,6 @@ export default {
     },
     links: {
       home: "Home",
-      blog: "Blog",
       projects: "Projects",
       tools: "Tools",
       about: "About",
@@ -17,10 +16,6 @@ export default {
       title: "Hey, I'm Robin 👋",
       description:
         '<b class="accent-text">I\'m a French software engineer specialized in full stack web development</b>. Well, I\'m also a UI designer in my spare time. Until January, I worked at <a href="https://icohup.com/" target="_blank" class="accent">Icohup</a>, a French company based in Limoges.',
-    },
-    blog: {
-      description:
-        'Since May 2021, I regularly write posts on a community platform that I\'ve created called <a href="https://needlify.com/me/MrAnyx" class="accent" target="_blank">Needlify</a>. Anyway, here is a list of my previous posts. Hope you like it 👍.',
     },
     projects: {
       description:
