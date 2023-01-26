@@ -4,7 +4,11 @@ const projects = [
     url: "https://needlify.com",
     description: "pages.projects.needlify",
     image: "https://i.ibb.co/MNFxsL3/mockup2.png",
-    tags: ["Blog", "Learn", "Tech"],
+    tags: [
+      "pages.projects.tags.blog",
+      "pages.projects.tags.learn",
+      "pages.projects.tags.tech",
+    ],
     wip: false,
   },
   {
@@ -12,16 +16,24 @@ const projects = [
     url: "https://github.com/MrAnyx/minigram",
     description: "pages.projects.minigram",
     image: "https://i.ibb.co/StsvyY8/promo-xl.png",
-    tags: ["Chrome", "Extension", "Vue"],
+    tags: [
+      "pages.projects.tags.chrome",
+      "pages.projects.tags.extension",
+      "pages.projects.tags.vue",
+    ],
     wip: false,
   },
   {
-    title: "Lithium newsletter",
+    title: "pages.projects.newsletterTitle",
     url: "https://needlify.com/newsletter/registration",
     description: "pages.projects.newsletter",
     image:
       "https://i.ibb.co/FzTdBrP/271992547-4824056484322373-7139243337459286696-n.jpg",
-    tags: ["Newsletter", "Tech", "Cyber"],
+    tags: [
+      "pages.projects.tags.newsletter",
+      "pages.projects.tags.tech",
+      "pages.projects.tags.cyber",
+    ],
     wip: false,
   },
   {
@@ -29,7 +41,12 @@ const projects = [
     url: "https://github.com/TimePHP-org",
     description: "pages.projects.timephp",
     image: "",
-    tags: ["Php", "Mvc", "Framework", "Twig"],
+    tags: [
+      "pages.projects.tags.php",
+      "pages.projects.tags.mvc",
+      "pages.projects.tags.framework",
+      "pages.projects.tags.twig",
+    ],
     wip: false,
   },
   {
@@ -37,7 +54,12 @@ const projects = [
     url: "https://github.com/MrAnyx/Rainbow-console",
     description: "pages.projects.rainbowConsole",
     image: "https://i.ibb.co/fN3hJYQ/photo-1609466686153-8da47ddda47b.png",
-    tags: ["Php", "Console", "Color", "Composer"],
+    tags: [
+      "pages.projects.tags.php",
+      "pages.projects.tags.console",
+      "pages.projects.tags.color",
+      "pages.projects.tags.composer",
+    ],
     wip: false,
   },
   {
@@ -45,7 +67,12 @@ const projects = [
     url: "https://github.com/Codeplate-app/Codeplate",
     description: "pages.projects.codeplate",
     image: "",
-    tags: ["Electron", "Boilerplate", "VueJS", "ViteJS"],
+    tags: [
+      "pages.projects.tags.electron",
+      "pages.projects.tags.boilerplate",
+      "pages.projects.tags.vue",
+      "pages.projects.tags.vite",
+    ],
     wip: true,
   },
   {
@@ -53,15 +80,19 @@ const projects = [
     url: "https://github.com/MrAnyx/made-with-collection",
     description: "pages.projects.madeWithCollection",
     image: "",
-    tags: ["Js", "Npm"],
+    tags: ["pages.projects.tags.js", "pages.projects.tags.npm"],
     wip: false,
   },
   {
-    title: "Pony plugin",
+    title: "pages.projects.ponyPluginTitle",
     url: "https://github.com/MrAnyx/lite-plugin-pony",
     description: "pages.projects.ponyPlugin",
     image: "",
-    tags: ["Pony", "Lite", "Plugin"],
+    tags: [
+      "pages.projects.tags.pony",
+      "pages.projects.tags.lite",
+      "pages.projects.tags.plugin",
+    ],
     wip: false,
   },
   {
@@ -69,7 +100,12 @@ const projects = [
     url: "https://github.com/MrAnyx/shortly",
     description: "pages.projects.shortly",
     image: "",
-    tags: ["AdonisJS", "Url", "Shortner", "Js"],
+    tags: [
+      "pages.projects.tags.adonis",
+      "pages.projects.tags.url",
+      "pages.projects.tags.shortener",
+      "pages.projects.tags.js",
+    ],
     wip: false,
   },
   {
@@ -77,7 +113,11 @@ const projects = [
     url: "https://github.com/MrAnyx/TinyDB",
     description: "pages.projects.tinydb",
     image: "https://i.ibb.co/VHrZspk/tinydb.png",
-    tags: ["Json", "Php", "Database"],
+    tags: [
+      "pages.projects.tags.json",
+      "pages.projects.tags.php",
+      "pages.projects.tags.database",
+    ],
     wip: true,
   },
   {
@@ -85,7 +125,11 @@ const projects = [
     url: "https://github.com/MrAnyx/HashTag",
     description: "pages.projects.hashtag",
     image: "https://i.ibb.co/vJ7NY0t/pexels-photo-2179483.png",
-    tags: ["Electron", "Hash", "Js"],
+    tags: [
+      "pages.projects.tags.electron",
+      "pages.projects.tags.hash",
+      "pages.projects.tags.js",
+    ],
     wip: false,
   },
   {
@@ -93,7 +137,12 @@ const projects = [
     url: "https://github.com/MrAnyx/QuickLog_v2",
     description: "pages.projects.quicklog",
     image: "",
-    tags: ["Electron", "Password", "Vue.js", "Vuetify"],
+    tags: [
+      "pages.projects.tags.electron",
+      "pages.projects.tags.password",
+      "pages.projects.tags.vue",
+      "pages.projects.tags.vuetify",
+    ],
     wip: true,
   },
   {
@@ -101,7 +150,12 @@ const projects = [
     url: "https://github.com/Buissartt/Linux-autohost",
     description: "pages.projects.linuxAutohost",
     image: "https://i.ibb.co/QfGGx3t/linux-autohost.png",
-    tags: ["WSL", "Linux", "Debian", "Web"],
+    tags: [
+      "pages.projects.tags.wsl",
+      "pages.projects.tags.linux",
+      "pages.projects.tags.debian",
+      "pages.projects.tags.web",
+    ],
     wip: true,
   },
   {
@@ -109,7 +163,12 @@ const projects = [
     url: "https://github.com/CrabGang-Team/crabgang2020",
     description: "pages.projects.nuitInfo2020",
     image: "",
-    tags: ["Team", "Project", "Event", "1st place"],
+    tags: [
+      "pages.projects.tags.team",
+      "pages.projects.tags.project",
+      "pages.projects.tags.event",
+      "pages.projects.tags.first_place",
+    ],
     wip: false,
   },
   {
@@ -117,7 +176,12 @@ const projects = [
     url: "https://github.com/MrAnyx/NuitInfo2019",
     description: "pages.projects.nuitInfo2019",
     image: "",
-    tags: ["Team", "Project", "Event", "1st place"],
+    tags: [
+      "pages.projects.tags.team",
+      "pages.projects.tags.project",
+      "pages.projects.tags.event",
+      "pages.projects.tags.first_place",
+    ],
     wip: false,
   },
   {
@@ -125,7 +189,12 @@ const projects = [
     url: "https://github.com/MrAnyx/CrabGang.github.io",
     description: "pages.projects.nuitInfo2018",
     image: "",
-    tags: ["Team", "Project", "Event", "1st place"],
+    tags: [
+      "pages.projects.tags.team",
+      "pages.projects.tags.project",
+      "pages.projects.tags.event",
+      "pages.projects.tags.first_place",
+    ],
     wip: false,
   },
   {
@@ -133,7 +202,11 @@ const projects = [
     url: "https://github.com/MrAnyx/FlappyBird",
     description: "pages.projects.flappy",
     image: "https://i.ibb.co/2MbGrs4/pexels-photo-414181.jpg",
-    tags: ["FlappyBird", "Processing", "Game"],
+    tags: [
+      "pages.projects.tags.flappybird",
+      "pages.projects.tags.processing",
+      "pages.projects.tags.game",
+    ],
     wip: false,
   },
   {
@@ -141,7 +214,12 @@ const projects = [
     url: "https://github.com/MrAnyx/TwitterBot",
     description: "pages.projects.apod",
     image: "https://i.ibb.co/r54tF7C/E8p-R-DBWUAAt-Sk3.jpg",
-    tags: ["Twitter", "Bot", "Nasa", "Picture"],
+    tags: [
+      "pages.projects.tags.twitter",
+      "pages.projects.tags.bot",
+      "pages.projects.tags.nasa",
+      "pages.projects.tags.picture",
+    ],
     wip: false,
   },
   {
@@ -149,7 +227,12 @@ const projects = [
     url: "https://github.com/MrAnyx/TwitterBot-ISS-Everywhere",
     description: "pages.projects.iss",
     image: "",
-    tags: ["Twitter", "Bot", "Nasa", "Iss"],
+    tags: [
+      "pages.projects.tags.twitter",
+      "pages.projects.tags.bot",
+      "pages.projects.tags.nasa",
+      "pages.projects.tags.iss",
+    ],
     wip: false,
   },
   {
@@ -157,23 +240,36 @@ const projects = [
     url: "https://github.com/MrAnyx/Vykon4",
     description: "pages.projects.vykon",
     image: "",
-    tags: ["Python", "Power 4", "AI"],
+    tags: [
+      "pages.projects.tags.python",
+      "pages.projects.tags.power_4",
+      "pages.projects.tags.ai",
+    ],
     wip: false,
   },
   {
-    title: "Game of life",
+    title: "pages.projects.gameOfLifeTitle",
     url: "https://github.com/MrAnyx/Jeu-de-la-vie",
     description: "pages.projects.gameOfLife",
     image: "",
-    tags: ["Processing", "Game", "Cells", "Life"],
+    tags: [
+      "pages.projects.tags.processing",
+      "pages.projects.tags.game",
+      "pages.projects.tags.cells",
+      "pages.projects.tags.life",
+    ],
     wip: false,
   },
   {
-    title: "Langton's Ant",
+    title: "pages.projects.langtonTitle",
     url: "https://github.com/MrAnyx/FourmiLangton",
     description: "pages.projects.langton",
     image: "",
-    tags: ["Langton", "Ant", "Processing"],
+    tags: [
+      "pages.projects.tags.langton",
+      "pages.projects.tags.ant",
+      "pages.projects.tags.processing",
+    ],
     wip: false,
   },
 ];

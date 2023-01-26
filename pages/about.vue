@@ -11,7 +11,7 @@
     <p v-html="$t('pages.about.text8')"></p>
 
     <div id="education-wrapper">
-      <h2 class="page-title-h2">{{ $t("pages.about.education") }}</h2>
+      <h2 class="page-title-h2">{{ $t("pages.education.title") }}</h2>
 
       <div id="schools-wrapper">
         <div
@@ -20,25 +20,25 @@
           class="school-container"
         >
           <div class="school-info">
-            <h3 class="school-name">{{ edu.school }}</h3>
+            <h3 class="school-name">{{ $t(edu.school) }}</h3>
             <div class="school-date secondary">
-              {{ edu.from
+              {{ $t(edu.from)
               }}<span v-if="edu.to !== ''" class="secondary">
-                - {{ edu.to }}</span
+                - {{ $t(edu.to) }}</span
               >
             </div>
           </div>
 
-          <p class="school-location">{{ edu.country }}</p>
+          <p class="school-location">{{ $t(edu.country) }}</p>
 
           <p class="school-fields secondary">
-            {{ $t("pages.about.subjects") }} :
+            {{ $t("pages.education.subjects") }} :
           </p>
           <span
             v-for="(field, fieldIdx) in edu.fields"
             :key="fieldIdx"
             class="accent hover field"
-            >{{ field }}</span
+            >{{ $t(field) }}</span
           >
           <div v-if="edu.diplomas">
             <ul class="school-diplomas">
@@ -46,8 +46,8 @@
                 v-for="(diploma, diplomasIdx) in edu.diplomas"
                 :key="diplomasIdx"
               >
-                {{ diploma.date }} - <b>{{ diploma.name }}</b>
-                {{ diploma.info }}
+                {{ $t(diploma.date) }} - <b>{{ $t(diploma.name) }}</b>
+                {{ $t(diploma.info) }}
               </li>
             </ul>
           </div>
@@ -56,21 +56,23 @@
     </div>
 
     <div id="experience-wrapper">
-      <h2 class="page-title-h2">{{ $t("pages.about.experience") }}</h2>
+      <h2 class="page-title-h2">{{ $t("pages.experience.title") }}</h2>
 
       <div id="jobs-wrapper">
         <div v-for="(job, jobIdx) in jobs" :key="jobIdx" class="job-container">
           <div class="job-info">
-            <h3 class="job-title">{{ job.title }}</h3>
+            <h3 class="job-title">{{ $t(job.title) }}</h3>
             <div class="job-date secondary">
-              {{ job.from
+              {{ $t(job.from)
               }}<span v-if="job.to !== ''" class="secondary">
-                - {{ job.to }}</span
+                - {{ $t(job.to) }}</span
               >
             </div>
           </div>
-          <p class="job-company">{{ job.company }}</p>
-          <p class="job-tech secondary">{{ $t("pages.about.techs") }} :</p>
+          <p class="job-company">
+            {{ $t(job.contrat) }} - {{ $t(job.company) }}
+          </p>
+          <p class="job-tech secondary">{{ $t("pages.experience.techs") }} :</p>
           <span
             v-for="(technology, technologyIdx) in job.technologies"
             :key="technologyIdx"
@@ -79,7 +81,7 @@
           >
           <ul class="job-actions">
             <li v-for="(actions, actionsIdx) in job.actions" :key="actionsIdx">
-              {{ actions }}
+              {{ $t(actions) }}
             </li>
           </ul>
         </div>

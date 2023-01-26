@@ -24,14 +24,14 @@
         <div v-if="project.image !== ''" class="image-container">
           <img :src="project.image" alt="project image" />
         </div>
-        <h3>{{ project.title }}</h3>
+        <h3>{{ $t(project.title) }}</h3>
         <p class="secondary">{{ $t(project.description) }}</p>
         <div v-if="project.tags !== []" class="project-tags">
           <span
             v-for="(tag, idxTag) in project.tags"
             :key="idxTag"
             class="tag accent"
-            >{{ tag }}</span
+            >{{ $t(tag) }}</span
           >
         </div>
       </a>
