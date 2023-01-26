@@ -86,7 +86,7 @@
       </div>
     </div>
 
-    <p class="last">{{ $("pages.about.text9") }}</p>
+    <p class="last">{{ $t("pages.about.text9") }}</p>
   </div>
 </template>
 
