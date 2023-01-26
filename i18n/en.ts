@@ -15,22 +15,16 @@ export default {
   pages: {
     index: {
       title: "Hey, I'm Robin 👋",
-      content1:
-        "I'm a French software engineer specialized in full stack web developement",
-      content2: "Well, I'm also a UI designer in my spare time.",
-      content3: "Until January, I worked at",
-      content4: "a french company based in Limoges.",
+      description:
+        '<b class="accent-text">I\'m a French software engineer specialized in full stack web development</b>. Well, I\'m also a UI designer in my spare time. Until January, I worked at <a href="https://icohup.com/" target="_blank" class="accent">Icohup</a>, a French company based in Limoges.',
     },
     blog: {
-      description1:
-        "Since May 2021, I regularly write posts on a community platform that I've created called",
-      description2:
-        "Anyway, here is a list of my previous posts. Hope you like it 👍.",
+      description:
+        'Since May 2021, I regularly write posts on a community platform that I\'ve created called <a href="https://needlify.com/me/MrAnyx" class="accent" target="_blank">Needlify</a>. Anyway, here is a list of my previous posts. Hope you like it 👍.',
     },
     projects: {
-      description1:
-        "Since 2017 when I became an engineer student, I've worked on a lot of various projects. Some of them are just little school projects, but others are bigger projects I'm very proud of. All of them are available on my",
-      description2: "Anyway, here is a small list of my main projects.",
+      description:
+        'Since 2017 when I became an engineer student, I\'ve worked on a lot of various projects. Some of them are just little school projects, but others are bigger projects I\'m very proud of. All of them are available on my <a href="https://github.com/MrAnyx" class="accent">Github</a>. Anyway, here is a small list of my main projects.',
       needlify: "A knowledge sharing plateform around IT and new technologies.",
       minigram:
         "A Chrome extension to remove useless parts of the Instagram UI.",
@@ -176,13 +170,13 @@ export default {
     about: {
       text1:
         // Besides that, I created my micro business called <b class="accent-text">Codeon</b> in which I create websites or web application for individuals or startups.
-        'As you may have seen, I\'m Robin (aka MrAnyx) and I\'m a <b class="accent-text">tech and open-source enthusiast</b>. Since 2019, I\'m specialized in <b class="accent-text">fullstack web development</b>. I am currently a french <b class="accent-text">software engineer</b> in a company called <b class="accent-text">Icohup</b> which creates connected radioactivity sensors. One thing i really like is to build apps and things and share them on the Internet so that people can give their feedback.',
+        'As you may have seen, I\'m Robin (aka MrAnyx) and I\'m a <b class="accent-text">tech and open-source enthusiast</b>. Since 2019, I specialized in <b class="accent-text">full stack web development</b>. I am currently a French <b class="accent-text">software engineer</b> and until January 2023, I worked in a company called <b class="accent-text">Icohup</b> which creates connected radioactivity sensors. One thing i really like is to build apps and things and share them on the Internet so that people can give their feedback.',
       text2:
         'I first experienced web development when I was in 9th grade. With a friend of mine, we tried to create our very first website using HTML and CSS thanks to the explanations and tutorials that we could find on "le site du zéro" (now known as <a href="https://openclassrooms.com/" target="_blank" class="accent">OpenClassrooms</a>). I spent a lot of time trying to create a navigation bar or a paragraph and align it all in an HTML page. That was fun 😄',
       text3:
         "I started programming and development with Python (very original 😄) but it was when I discovered web technologies that I really started to get involved in this environment. I started with the basics with HTML, CSS and Javascript, then I continued with CSS frameworks such as bootstrap. Quite quickly, I got interested in backend frameworks like Symfony or Laravel or even Javascript frameworks like React or Electron. I was fascinated by these technologies.",
       text4:
-        'With all the knowledge that I have been able to accumulate over all these years, I started to create small projects like the game of life or the langton\'s ant, both available in the <nuxt-link to="projects" class="accent">projects page</nuxt-link>. Then, the more I developed, the more my ambitions increased and my projects grew. From thread to needle, I gathered enough knowledge to create my biggest project yet : <a href="https://needlify.com" class="accent" target="_blank">Needlify</a>, a platform where <b class="accent-text">people can share and learn things around new technologies</b>. I spent almost a year creating this project. In reality, I had to start over from the beginning because the bases I had created did not correspond to what I wanted to achieve. Then I knew how to seize the opportunities that were given to me and optimize my time to concentrate on this project. In 5 months, the development projects were completed and the site was in production.',
+        'With all the knowledge that I have been able to accumulate over all these years, I started to create small projects like the game of life or the Langton\'s ant, both available in the <nuxt-link to="projects" class="accent">projects page</nuxt-link>. Then, the more I developed, the more my ambitions increased and my projects grew. From thread to needle, I gathered enough knowledge to create my biggest project yet : <a href="https://needlify.com" class="accent" target="_blank">Needlify</a>, a platform where <b class="accent-text">people can share and learn things around new technologies</b>. I spent almost a year creating this project. In reality, I had to start over from the beginning because the bases I had created did not correspond to what I wanted to achieve. Then I knew how to seize the opportunities that were given to me and optimize my time to concentrate on this project. In 5 months, the development projects were completed and the site was in production.',
       text5:
         "For quite some time now, I've really enjoyed discovering new technologies like: Electron, Nuxt, Vue.js or even new programming languages like Pony or Vlang and trying to create projects with that. Believe me, I have no shortage of ideas. I have an endless list of project ideas, sometimes totally implausible, that I try to achieve as soon as I have the ability and the inclination.",
       text6:

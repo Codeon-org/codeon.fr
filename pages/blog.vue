@@ -2,11 +2,10 @@
   <div>
     <h1 class="page-title">{{ $t("header.links.blog") }}</h1>
 
-    <p class="secondary page-description">
-      {{ $t("pages.blog.description1") }}
-      <a href="https://needlify.com/me/MrAnyx" class="accent">Needlify</a>.
-      {{ $t("pages.blog.description2") }}
-    </p>
+    <p
+      class="secondary page-description"
+      v-html="$t('pages.blog.description')"
+    ></p>
 
     <div id="posts-wrapper" class="">
       <a

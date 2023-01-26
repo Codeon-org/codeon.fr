@@ -4,12 +4,7 @@
       <img src="~/assets/bitmoji2.png" alt="Face bitmoji" />
     </div>
     <h1>{{ $t("pages.index.title") }}</h1>
-    <p class="first">
-      <b class="accent-text">{{ $t("pages.index.content1") }}</b
-      >. {{ $t("pages.index.content2") }} {{ $t("pages.index.content3") }}
-      <a href="https://icohup.com/" target="_blank" class="accent">Icohup</a>,
-      {{ $t("pages.index.content4") }}
-    </p>
+    <p class="first" v-html="$t('pages.index.description')"></p>
   </div>
 </template>
 

@@ -1,11 +1,10 @@
 <template>
   <div>
     <h1 class="page-title">{{ $t("header.links.projects") }}</h1>
-    <p class="secondary page-description">
-      {{ $t("pages.projects.description1") }}
-      <a href="https://github.com/MrAnyx" class="accent">Github</a>.
-      {{ $t("pages.projects.description2") }}
-    </p>
+    <p
+      class="secondary page-description"
+      v-html="$t('pages.projects.description')"
+    ></p>
 
     <div id="macy-container">
       <a

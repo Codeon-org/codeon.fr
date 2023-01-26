@@ -15,25 +15,16 @@ export default {
   pages: {
     index: {
       title: "Hey, je m'appelle Robin 👋",
-      content1:
-        "Je suis un ingénieur informatique français spécialisé en le développement web full-stack",
-      content2:
-        "Je suis aussi designer d'interface utilisateur à mes heures perdues.",
-      content3: "Jusqu'en janvier, je travaillais à",
-      content4: "une jeune entreprise française basée à Limoges.",
+      description:
+        '<b class="accent-text">Je suis un ingénieur informatique français spécialisé en développement web full-stack</b>. Je suis aussi designer d\'interface utilisateur à mes heures perdues. Jusqu\'en janvier, je travaillais pour <a href="https://icohup.com/" target="_blank" class="accent">Icohup</a>, une jeune entreprise française basée à Limoges.',
     },
     blog: {
-      title: "Articles",
-      description1:
-        "Depuis mai 2021, je rédige régulièrement des articles sur une plateforme communautaire que j'ai créée :",
-      description2:
-        "Bref, voici la liste de mes précédents articles. J'espère qu'ils vous plairont 👍.",
+      description:
+        'Depuis mai 2021, je rédige régulièrement des articles sur une plateforme communautaire que j\'ai créée : <a href="https://needlify.com/me/MrAnyx" class="accent" target="_blank">Needlify</a>. Bref, voici la liste de mes précédents articles. J\'espère qu\'ils vous plairont 👍.',
     },
     projects: {
-      description1:
-        "Depuis 2017, date à laquelle je suis devenu étudiant ingénieur, j'ai travaillé sur de nombreux projets variés. Certains d'entre eux ne sont que des petits projets scolaires, mais d'autres sont des projets plus importants dont je suis très fier. Ils sont tous disponibles sur mon",
-      description2:
-        "Quoi qu'il en soit, voici une petite liste de mes principaux projets.",
+      description:
+        "Depuis 2017, date à laquelle je suis devenu étudiant ingénieur, j'ai travaillé sur de nombreux projets variés. Certains d'entre eux ne sont que des petits projets scolaires, mais d'autres sont des projets plus importants dont je suis très fier. Ils sont tous disponibles sur mon <a href=\"https://github.com/MrAnyx\" class=\"accent\">Github</a>. Quoi qu'il en soit, voici une petite liste de mes principaux projets.",
       needlify:
         "Une plateforme de partage de connaissances autour de l'informatique et des nouvelles technologies.",
       minigram:
@@ -193,13 +184,13 @@ export default {
     about: {
       text1:
         // Besides that, I created my micro business called <b class="accent-text">Codeon</b> in which I create websites or web application for individuals or startups.
-        'Comme vous l\'avez peut-être vu, je m\'appelle Robin (alias MrAnyx) et je suis un <b class="accent-text">passionné de technologie et de logiciels libres</b>. Depuis 2019, je suis spécialisé en <b class="accent-text">développement web fullstack</b>. Je suis actuellement <b class="accent-text">ingénieur informatique</b> français dans une entreprise appelée <b class="accent-text">Icohup</b> qui crée des capteurs de radioactivité connectés. Une chose que j\'aime énormement, c\'est de créer des applications et des projets et de les partager sur internet pour que les gens puissent donner leur avis.',
+        'Comme vous l\'avez peut-être vu, je m\'appelle Robin (alias MrAnyx) et je suis un <b class="accent-text">passionné de technologie et de logiciels libres</b>. Depuis 2019, je suis spécialisé en <b class="accent-text">développement web full stack</b>. Je suis actuellement <b class="accent-text">ingénieur informatique</b> français et jusqu\'en janvier 2023, j\'ai travaillé dans une entreprise appelée <b class="accent-text">Icohup</b> qui crée des capteurs de radioactivité connectés. Une chose que j\'aime énormément, c\'est de créer des applications et des projets et de les partager sur internet pour que les gens puissent donner leur avis.',
       text2:
-        'J\'ai fait mes premières armes dans le développement web lorsque j\'étais en 9ème année.  Avec un ami, nous avons essayé de créer notre tout premier site web en utilisant HTML et CSS grâce aux explications et aux tutoriels que nous pouvions trouver sur "le site du zéro" (maintenant connu sous le nom de <a href="https://openclassrooms.com/" target="_blank" class="accent">OpenClassrooms</a>). J\'ai passé beaucoup de temps à essayer de créer une barre de navigation ou un paragraphe et à aligner le tout dans une page HTML. C\'était amusant 😄',
+        'Je suis tombé dans le monde du développement web lorsque j\'étais en 3ème. Avec un ami, nous avons essayé de créer notre tout premier site web en utilisant HTML et CSS grâce aux explications et aux tutoriels que nous pouvions trouver sur "le site du zéro" (maintenant connu sous le nom de <a href="https://openclassrooms.com/" target="_blank" class="accent">OpenClassrooms</a>). J\'ai passé beaucoup de temps à essayer de créer une barre de navigation ou un paragraphe et à aligner le tout dans une page HTML. C\'était amusant 😄',
       text3:
         "J'ai commencé la programmation et le développement avec Python (très original 😄) mais c'est en découvrant les technologies web que j'ai vraiment commencé à m'investir dans cet environnement. J'ai commencé par les bases avec HTML, CSS et Javascript, puis j'ai continué avec les frameworks CSS comme bootstrap. Assez rapidement, je me suis intéressé aux frameworks backend comme Symfony ou Laravel ou même aux frameworks Javascript comme React ou Electron. J'étais fasciné par ces technologies.",
       text4:
-        'Avec toutes les connaissances que j\'ai pu accumuler au cours de toutes ces années, j\'ai commencé à créer de petits projets comme le jeu de la vie ou la fourmi de Langton, tous deux disponibles dans la <nuxt-link to="projects" class="accent">page des projets</nuxt-link>. Puis, plus j\'évoluais, plus mes ambitions augmentaient et mes projets grandissaient. De fil en aiguille, j\'ai rassemblé suffisamment de connaissances pour créer mon plus grand projet à ce jour : <a href="https://needlify.com" class="accent" target="_blank">Needlify</a>, une plateforme sur laquelle<b class="accent-text">les gens peuvent partager et apprendre des choses autour des nouvelles technologies</b>. J\'ai passé presque un an à créer ce projet. En réalité, j\'ai dû recommencer depuis le début car les bases que j\'avais créées ne correspondaient pas à ce que je voulais réaliser. J\'ai ensuite su saisir les opportunités qui m\'étaient données et optimiser mon temps pour me concentrer sur ce projet. En 5 mois, les projets de développement étaient terminés et le site était en production.',
+        'Avec toutes les connaissances que j\'ai pu accumuler au cours de toutes ces années, j\'ai commencé à créer de petits projets comme le jeu de la vie ou la fourmi de Langton, tous deux disponibles dans la <nuxt-link to="projects" class="accent">page des projets</nuxt-link>. Puis, plus j\'évoluais, plus mes ambitions augmentaient et mes projets grandissaient. De fil en aiguille, j\'ai rassemblé suffisamment de connaissances pour créer mon plus grand projet à ce jour : <a href="https://needlify.com" class="accent" target="_blank">Needlify</a>, une plateforme sur laquelle <b class="accent-text">les gens peuvent partager et apprendre des choses autour des nouvelles technologies</b>. J\'ai passé presque un an à créer ce projet. En réalité, j\'ai dû recommencer depuis le début car les bases que j\'avais créées ne correspondaient pas à ce que je voulais réaliser. J\'ai ensuite su saisir les opportunités qui m\'étaient données et optimiser mon temps pour me concentrer sur ce projet. En 5 mois, les projets de développement étaient terminés et le site était en production.',
       text5:
         "Depuis un certain temps maintenant, j'aime vraiment découvrir de nouvelles technologies comme : Electron, Nuxt, Vue.js ou même de nouveaux langages de programmation comme Pony ou Vlang et essayer de créer des projets avec ça. Croyez-moi, je ne manque pas d'idées. J'ai une liste infinie d'idées de projets, parfois totalement invraisemblables, que j'essaie de réaliser dès que j'en ai la possibilité et l'envie.",
       text6:
