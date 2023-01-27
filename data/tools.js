@@ -408,7 +408,7 @@ const tools = [
         description: "pages.tools.vuejs",
       },
       {
-        name: "ViteJS",
+        name: "Vite.js",
         link: "https://vitejs.dev/",
         description: "pages.tools.vitejs",
       },

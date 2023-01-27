@@ -10,6 +10,8 @@ const experience = [
       "pages.experience.icohupWebDev.actions.0",
       "pages.experience.icohupWebDev.actions.1",
       "pages.experience.icohupWebDev.actions.2",
+      "pages.experience.icohupWebDev.actions.3",
+      "pages.experience.icohupWebDev.actions.4",
     ],
   },
   // {
@@ -52,7 +54,6 @@ const experience = [
       "pages.experience.icohupApprentissage.actions.0",
       "pages.experience.icohupApprentissage.actions.1",
       "pages.experience.icohupApprentissage.actions.2",
-      "pages.experience.icohupApprentissage.actions.3",
     ],
   },
   {
