@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@nuxtjs/i18n": "^7.3.1",
-    "core-js": "^3.21.1",
+    "core-js": "^3.28.0",
     "macy": "^2.5.1",
     "nuxt": "^2.15.7",
     "vue-eva-icons": "^1.1.1",
